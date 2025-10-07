@@ -27,6 +27,7 @@ logs/
 backtest_results/
 entrypoint_*/
 FXポイント突合/
+output_*/
 
 # トークン・認証情報
 *token*.json
