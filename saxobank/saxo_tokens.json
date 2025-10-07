@@ -1,0 +1,6 @@
+{
+  "access_token": "eyJhbGciOiJFUzI1NiIsIng1dCI6IjI3RTlCOTAzRUNGMjExMDlBREU1RTVCOUVDMDgxNkI2QjQ5REEwRkEifQ.eyJvYWEiOiI3Nzc3MCIsImlzcyI6Im9hIiwiYWlkIjoiNjIyNiIsInVpZCI6Ijh4aXVqRDAwaUlEa2pPWENELWNRVkE9PSIsImNpZCI6Ijh4aXVqRDAwaUlEa2pPWENELWNRVkE9PSIsImlzYSI6IkZhbHNlIiwidGlkIjoiMTEyNTMiLCJzaWQiOiIwYjUwNGNkZDNmZjA0NDYwYTlhZGYwN2UxZjc5NDU2YiIsImRnaSI6Ijg0IiwiZXhwIjoiMTc0ODY2NDkxMiIsIm9hbCI6IjFGIiwiaWlkIjoiZTk3MmNlZWEzMmZjNDVhMDAzNjgwOGRkNzY3YzEyZjMifQ.pAtvq9vOQ9Q_ySAs6nmXHncX7-C13iBiIA0ryGdiBbhvd0b1IK_NiXCjbgfmcEjyRaQGry1Oe9K56XCMRvrqyA",
+  "refresh_token": "43df7a55-a31a-410b-b1ea-0d5e4ed0dffe",
+  "expires_at": "2025-05-31T13:15:12.621714",
+  "environment": "sim"
+}

@@ -1,0 +1,171 @@
+2025-05-30 09:41:14 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-30 09:41:14 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\log
+2025-05-30 09:41:14 - INFO - [__init__] - ================================================================================
+2025-05-30 09:41:14 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-30 09:41:14 - INFO - [__init__] - ================================================================================
+2025-05-30 09:41:14 - DEBUG - [_load_token_from_file] - トークンファイルが存在しません
+2025-05-30 09:41:14 - INFO - [get_valid_token] - 新しい認証フローを開始します...
+2025-05-30 09:41:14 - INFO - [get_valid_token] - ブラウザで認証ページを開きます: https://sim.logonvalidation.net/authorize?response_type=code&client_id=5f19317941744e688ca30be6b2f53659&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&state=state123
+2025-05-30 09:41:14 - INFO - [run_auth_server] - 認証コード受信待機中...
+2025-05-30 09:55:05 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-30 09:55:05 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\log
+2025-05-30 09:55:05 - INFO - [__init__] - ================================================================================
+2025-05-30 09:55:05 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-30 09:55:05 - INFO - [__init__] - ================================================================================
+2025-05-30 09:55:05 - DEBUG - [get_token] - APIキーを使用してトークン生成
+2025-05-30 09:55:05 - DEBUG - [__init__] - システム設定:
+2025-05-30 09:55:05 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-30 09:55:05 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-30 09:55:05 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-30 09:55:05 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-30 09:55:05 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-30 09:55:05 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-30 09:55:05 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-30 09:55:05 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 401 0
+2025-05-30 09:55:05 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 401
+2025-05-30 09:55:05 - ERROR - [_get_account_info] - アカウント取得失敗: 401
+2025-05-30 09:55:05 - ERROR - [_get_account_info] - レスポンス: 
+2025-05-30 09:55:05 - ERROR - [_get_account_info] - アカウント情報取得エラー: アカウント取得失敗: 401
+2025-05-30 09:55:05 - ERROR - [_initialize_system] - ❌ システム初期化エラー: アカウント取得失敗: 401
+2025-05-30 09:55:05 - ERROR - [_initialize_system] - 初期化エラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 09:55:05 - ERROR - [main] - システムエラー: アカウント取得失敗: 401
+2025-05-30 09:55:05 - ERROR - [main] - システムエラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 777, in main
+    fx_system = FXAutoEntrySystem()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 135, in __init__
+    self._initialize_system()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 11:35:14 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-30 11:35:14 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\log
+2025-05-30 11:35:14 - INFO - [__init__] - ================================================================================
+2025-05-30 11:35:14 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-30 11:35:14 - INFO - [__init__] - ================================================================================
+2025-05-30 11:35:14 - ERROR - [get_token] - 有効なトークンが見つかりません。以下のいずれかを実行してください：
+2025-05-30 11:35:14 - ERROR - [get_token] - 1. ブラウザでSaxo Bankにログインし、開発者ツールでトークンを取得して MANUAL_TOKEN に設定
+2025-05-30 11:35:14 - ERROR - [get_token] - 2. プログラムでの認証プロセスを実装
+2025-05-30 11:35:14 - DEBUG - [__init__] - システム設定:
+2025-05-30 11:35:14 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-30 11:35:14 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-30 11:35:14 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-30 11:35:14 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-30 11:35:14 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-30 11:35:14 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-30 11:35:14 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-30 11:35:16 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 401 0
+2025-05-30 11:35:16 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 401
+2025-05-30 11:35:16 - ERROR - [_get_account_info] - アカウント取得失敗: 401
+2025-05-30 11:35:16 - ERROR - [_get_account_info] - レスポンス: 
+2025-05-30 11:35:16 - ERROR - [_get_account_info] - アカウント情報取得エラー: アカウント取得失敗: 401
+2025-05-30 11:35:16 - ERROR - [_initialize_system] - ❌ システム初期化エラー: アカウント取得失敗: 401
+2025-05-30 11:35:16 - ERROR - [_initialize_system] - 初期化エラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 11:35:16 - ERROR - [main] - システムエラー: アカウント取得失敗: 401
+2025-05-30 11:35:16 - ERROR - [main] - システムエラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 777, in main
+    fx_system = FXAutoEntrySystem()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 135, in __init__
+    self._initialize_system()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 11:35:58 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-30 11:35:58 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\log
+2025-05-30 11:35:58 - INFO - [__init__] - ================================================================================
+2025-05-30 11:35:58 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-30 11:35:58 - INFO - [__init__] - ================================================================================
+2025-05-30 11:35:58 - ERROR - [get_token] - 有効なトークンが見つかりません。以下のいずれかを実行してください：
+2025-05-30 11:35:58 - ERROR - [get_token] - 1. ブラウザでSaxo Bankにログインし、開発者ツールでトークンを取得して MANUAL_TOKEN に設定
+2025-05-30 11:35:58 - ERROR - [get_token] - 2. プログラムでの認証プロセスを実装
+2025-05-30 11:35:58 - DEBUG - [__init__] - システム設定:
+2025-05-30 11:35:58 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-30 11:35:58 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-30 11:35:58 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-30 11:35:58 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-30 11:35:58 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-30 11:35:58 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-30 11:35:58 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-30 11:35:59 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 401 0
+2025-05-30 11:35:59 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 401
+2025-05-30 11:35:59 - ERROR - [_get_account_info] - アカウント取得失敗: 401
+2025-05-30 11:35:59 - ERROR - [_get_account_info] - レスポンス: 
+2025-05-30 11:35:59 - ERROR - [_get_account_info] - アカウント情報取得エラー: アカウント取得失敗: 401
+2025-05-30 11:35:59 - ERROR - [_initialize_system] - ❌ システム初期化エラー: アカウント取得失敗: 401
+2025-05-30 11:35:59 - ERROR - [_initialize_system] - 初期化エラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 11:35:59 - ERROR - [main] - システムエラー: アカウント取得失敗: 401
+2025-05-30 11:35:59 - ERROR - [main] - システムエラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 777, in main
+    fx_system = FXAutoEntrySystem()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 135, in __init__
+    self._initialize_system()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 11:36:27 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-30 11:36:27 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\log
+2025-05-30 11:36:27 - INFO - [__init__] - ================================================================================
+2025-05-30 11:36:27 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-30 11:36:27 - INFO - [__init__] - ================================================================================
+2025-05-30 11:36:27 - ERROR - [get_token] - 有効なトークンが見つかりません。以下のいずれかを実行してください：
+2025-05-30 11:36:27 - ERROR - [get_token] - 1. ブラウザでSaxo Bankにログインし、開発者ツールでトークンを取得して MANUAL_TOKEN に設定
+2025-05-30 11:36:27 - ERROR - [get_token] - 2. プログラムでの認証プロセスを実装
+2025-05-30 11:36:27 - DEBUG - [__init__] - システム設定:
+2025-05-30 11:36:27 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-30 11:36:27 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-30 11:36:27 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-30 11:36:27 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-30 11:36:27 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-30 11:36:27 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-30 11:36:27 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-30 11:36:32 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 401 0
+2025-05-30 11:36:32 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 401
+2025-05-30 11:36:32 - ERROR - [_get_account_info] - アカウント取得失敗: 401
+2025-05-30 11:36:32 - ERROR - [_get_account_info] - レスポンス: 
+2025-05-30 11:36:32 - ERROR - [_get_account_info] - アカウント情報取得エラー: アカウント取得失敗: 401
+2025-05-30 11:36:32 - ERROR - [_initialize_system] - ❌ システム初期化エラー: アカウント取得失敗: 401
+2025-05-30 11:36:32 - ERROR - [_initialize_system] - 初期化エラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-30 11:36:32 - ERROR - [main] - システムエラー: アカウント取得失敗: 401
+2025-05-30 11:36:32 - ERROR - [main] - システムエラーの詳細:
+Traceback (most recent call last):
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 777, in main
+    fx_system = FXAutoEntrySystem()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 135, in __init__
+    self._initialize_system()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 144, in _initialize_system
+    self._get_account_info()
+  File "c:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\v3\bot_saxo.py", line 196, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401

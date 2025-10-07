@@ -1,0 +1,50 @@
+2025-05-28 06:31:03 - 📁 ログディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-28 06:31:07 - 📂 ログ保存先: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-28 08:48:01 - 📋 TRADE: 注文発注開始
+2025-05-28 08:48:01 - 📋 TRADE:   通貨ペア: USDJPY
+2025-05-28 08:48:01 - 📋 TRADE:   方向: Long
+2025-05-28 08:48:01 - 📋 TRADE:   数量: 124,843通貨
+2025-05-28 08:48:01 - 📋 TRADE:   注文タイプ: Market
+2025-05-28 08:48:01 - ✅ TRADE: [SIMULATION] 注文発注完了
+2025-05-28 08:48:01 - ✅ TRADE:   USDJPY Long 124,843通貨
+2025-05-28 08:48:01 - 📋 TRADE: ポジション開始 - USDJPY_Long_084801
+2025-05-28 08:59:00 - 📋 TRADE: 注文発注開始
+2025-05-28 08:59:00 - 📋 TRADE:   通貨ペア: USDJPY
+2025-05-28 08:59:00 - 📋 TRADE:   方向: Short
+2025-05-28 08:59:00 - 📋 TRADE:   数量: 124,869通貨
+2025-05-28 08:59:00 - 📋 TRADE:   注文タイプ: Market
+2025-05-28 08:59:00 - ✅ TRADE: [SIMULATION] 注文発注完了
+2025-05-28 08:59:00 - ✅ TRADE:   USDJPY Short 124,869通貨
+2025-05-28 08:59:00 - 📋 TRADE: ポジション開始 - USDJPY_Short_085900
+2025-05-28 08:59:01 - ✅ TRADE: [SIMULATION] ポジション決済完了
+2025-05-28 08:59:01 - ✅ TRADE:   USDJPY Long
+2025-05-28 08:59:01 - ✅ TRADE:   損益: -3.7 pips
+2025-05-28 08:59:01 - 📋 TRADE: ポジション終了 - USDJPY_Long_084801 (-3.7 pips)
+2025-05-28 09:13:00 - ✅ TRADE: [SIMULATION] ポジション決済完了
+2025-05-28 09:13:00 - ✅ TRADE:   USDJPY Short
+2025-05-28 09:13:00 - ✅ TRADE:   損益: 9.9 pips
+2025-05-28 09:13:00 - 📋 TRADE: ポジション終了 - USDJPY_Short_085900 (9.9 pips)
+2025-05-28 09:34:00 - 📋 TRADE: 注文発注開始
+2025-05-28 09:34:00 - 📋 TRADE:   通貨ペア: EURJPY
+2025-05-28 09:34:00 - 📋 TRADE:   方向: Short
+2025-05-28 09:34:00 - 📋 TRADE:   数量: 110,266通貨
+2025-05-28 09:34:00 - 📋 TRADE:   注文タイプ: Market
+2025-05-28 09:34:00 - ✅ TRADE: [SIMULATION] 注文発注完了
+2025-05-28 09:34:00 - ✅ TRADE:   EURJPY Short 110,266通貨
+2025-05-28 09:34:00 - 📋 TRADE: ポジション開始 - EURJPY_Short_093400
+2025-05-28 09:48:00 - ✅ TRADE: [SIMULATION] ポジション決済完了
+2025-05-28 09:48:00 - ✅ TRADE:   EURJPY Short
+2025-05-28 09:48:00 - ✅ TRADE:   損益: -1.2 pips
+2025-05-28 09:48:00 - 📋 TRADE: ポジション終了 - EURJPY_Short_093400 (-1.2 pips)
+2025-05-28 09:52:01 - 📋 TRADE: 注文発注開始
+2025-05-28 09:52:01 - 📋 TRADE:   通貨ペア: USDJPY
+2025-05-28 09:52:01 - 📋 TRADE:   方向: Short
+2025-05-28 09:52:01 - 📋 TRADE:   数量: 125,034通貨
+2025-05-28 09:52:01 - 📋 TRADE:   注文タイプ: Market
+2025-05-28 09:52:01 - ✅ TRADE: [SIMULATION] 注文発注完了
+2025-05-28 09:52:01 - ✅ TRADE:   USDJPY Short 125,034通貨
+2025-05-28 09:52:01 - 📋 TRADE: ポジション開始 - USDJPY_Short_095201
+2025-05-28 10:07:00 - ✅ TRADE: [SIMULATION] ポジション決済完了
+2025-05-28 10:07:00 - ✅ TRADE:   USDJPY Short
+2025-05-28 10:07:00 - ✅ TRADE:   損益: -35.5 pips
+2025-05-28 10:07:00 - 📋 TRADE: ポジション終了 - USDJPY_Short_095201 (-35.5 pips)

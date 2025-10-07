@@ -1,0 +1,507 @@
+2025-05-30 08:57:02,837 - INFO - 🚀 FXレート収集システム開始 (OAuth2対応版)
+2025-05-30 08:57:02,837 - INFO - 📋 システム初期化を開始します...
+2025-05-30 08:57:02,839 - INFO - 🧪 テストモードで実行します（実際のAPI呼び出しは行いません）
+2025-05-30 08:57:02,839 - DEBUG - 2/3: 通貨ペアUICマッピング確認中...
+2025-05-30 08:57:02,840 - INFO - 📊 対応通貨ペア数: 8
+2025-05-30 08:57:02,840 - DEBUG -   - USDJPY: UIC 31
+2025-05-30 08:57:02,840 - DEBUG -   - EURJPY: UIC 16
+2025-05-30 08:57:02,841 - DEBUG -   - GBPJPY: UIC 154
+2025-05-30 08:57:02,841 - DEBUG -   - AUDJPY: UIC 4
+2025-05-30 08:57:02,842 - DEBUG -   - CHFJPY: UIC 14
+2025-05-30 08:57:02,842 - DEBUG -   - EURUSD: UIC 21
+2025-05-30 08:57:02,842 - DEBUG -   - GBPUSD: UIC 22
+2025-05-30 08:57:02,843 - DEBUG -   - AUDUSD: UIC 2
+2025-05-30 08:57:02,843 - DEBUG - 3/3: ファイル存在確認中...
+2025-05-30 08:57:02,844 - INFO - ✅ システム初期化完了
+2025-05-30 08:57:02,844 - INFO - ================================================================================
+2025-05-30 08:57:02,844 - INFO - 🎬 FXレート収集開始（OAuth2対応版）
+2025-05-30 08:57:02,845 - INFO - ================================================================================
+2025-05-30 08:57:02,845 - INFO - 📂 Step 1: ファイル読み込み
+2025-05-30 08:57:02,848 - INFO - 📁 最新エントリーポイントファイル: entrypoints_20250530.csv
+2025-05-30 08:57:02,858 - INFO - ✅ エントリーポイント読み込み完了: 9件
+2025-05-30 08:57:02,858 - INFO - 📊 通貨ペア別内訳:
+2025-05-30 08:57:02,859 - INFO -   - USDJPY: 6件
+2025-05-30 08:57:02,860 - INFO -   - CHFJPY: 2件
+2025-05-30 08:57:02,860 - INFO -   - EURJPY: 1件
+2025-05-30 08:57:02,861 - INFO - 📁 最新検証ファイル: アノマリーFX 検証ポイント2025年05月25日 - エントリーポイント.csv
+2025-05-30 08:57:02,878 - DEBUG - 検証ファイル総行数: 216
+2025-05-30 08:57:02,878 - DEBUG - 行2: セクション発見 '利益効率（Hatch検証）日中版'
+2025-05-30 08:57:02,878 - DEBUG - 行15: 時刻順セクション開始 '利益効率（Hatch検証）日中版'
+2025-05-30 08:57:02,878 - DEBUG - 行16: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 08:57:02,879 - DEBUG - 行17: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:43:00', 'exit_time': '11:54:00', 'direction': 'Long'}
+2025-05-30 08:57:02,879 - DEBUG - 行18: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,879 - DEBUG - 行19: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 08:57:02,879 - DEBUG - 行20: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 08:57:02,879 - DEBUG - 行21: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,880 - DEBUG - 行22: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 08:57:02,880 - DEBUG - 行23: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 08:57:02,880 - DEBUG - 行24: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,880 - DEBUG - 行25: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:54:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,880 - DEBUG - 行26: セクション終了
+2025-05-30 08:57:02,880 - DEBUG - 行29: セクション発見 '利益効率（Hatch検証）'
+2025-05-30 08:57:02,881 - DEBUG - 行42: 時刻順セクション開始 '利益効率（Hatch検証）'
+2025-05-30 08:57:02,881 - DEBUG - 行43: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 08:57:02,881 - DEBUG - 行44: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,881 - DEBUG - 行45: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 08:57:02,881 - DEBUG - 行46: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 08:57:02,882 - DEBUG - 行47: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 08:57:02,882 - DEBUG - 行48: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 08:57:02,882 - DEBUG - 行49: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,882 - DEBUG - 行50: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:54:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,882 - DEBUG - 行51: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '21:08:00', 'exit_time': '21:11:00', 'direction': 'Short'}
+2025-05-30 08:57:02,883 - DEBUG - 行52: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:42:00', 'exit_time': '21:57:00', 'direction': 'Long'}
+2025-05-30 08:57:02,883 - DEBUG - 行53: セクション終了
+2025-05-30 08:57:02,883 - DEBUG - 行56: セクション発見 '勝率重視（ぶりんださん検証） 日中版'
+2025-05-30 08:57:02,883 - DEBUG - 行69: 時刻順セクション開始 '勝率重視（ぶりんださん検証） 日中版'
+2025-05-30 08:57:02,883 - DEBUG - 行70: データ追加 {'currency_pair': 'AUDUSD', 'entry_time': '10:05:00', 'exit_time': '10:19:00', 'direction': 'Long'}
+2025-05-30 08:57:02,883 - DEBUG - 行71: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '10:56:00', 'direction': 'Short'}
+2025-05-30 08:57:02,884 - DEBUG - 行72: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '10:59:00', 'exit_time': '11:10:00', 'direction': 'Long'}
+2025-05-30 08:57:02,884 - DEBUG - 行73: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,884 - DEBUG - 行74: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 08:57:02,884 - DEBUG - 行75: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-30 08:57:02,885 - DEBUG - 行76: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:13:00', 'direction': 'Short'}
+2025-05-30 08:57:02,885 - DEBUG - 行77: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,885 - DEBUG - 行78: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:31:00', 'direction': 'Long'}
+2025-05-30 08:57:02,885 - DEBUG - 行79: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,885 - DEBUG - 行80: セクション終了
+2025-05-30 08:57:02,885 - DEBUG - 行83: セクション発見 '勝率重視（ぶりんださん検証）'
+2025-05-30 08:57:02,887 - DEBUG - 行96: 時刻順セクション開始 '勝率重視（ぶりんださん検証）'
+2025-05-30 08:57:02,887 - DEBUG - 行97: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '10:59:00', 'exit_time': '11:10:00', 'direction': 'Long'}
+2025-05-30 08:57:02,887 - DEBUG - 行98: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,887 - DEBUG - 行99: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 08:57:02,887 - DEBUG - 行100: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:13:00', 'direction': 'Short'}
+2025-05-30 08:57:02,888 - DEBUG - 行101: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,888 - DEBUG - 行102: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:31:00', 'direction': 'Long'}
+2025-05-30 08:57:02,888 - DEBUG - 行103: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,888 - DEBUG - 行104: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '20:08:00', 'exit_time': '20:19:00', 'direction': 'Short'}
+2025-05-30 08:57:02,888 - DEBUG - 行105: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '21:08:00', 'exit_time': '21:11:00', 'direction': 'Short'}
+2025-05-30 08:57:02,888 - DEBUG - 行106: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:46:00', 'exit_time': '21:59:00', 'direction': 'Long'}
+2025-05-30 08:57:02,888 - DEBUG - 行107: セクション終了
+2025-05-30 08:57:02,889 - DEBUG - 行110: セクション発見 '時間効率重視 日中版'
+2025-05-30 08:57:02,889 - DEBUG - 行123: 時刻順セクション開始 '時間効率重視 日中版'
+2025-05-30 08:57:02,889 - DEBUG - 行124: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:03:00', 'exit_time': '10:12:00', 'direction': 'Short'}
+2025-05-30 08:57:02,889 - DEBUG - 行125: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:00:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 08:57:02,889 - DEBUG - 行126: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '12:01:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,890 - DEBUG - 行127: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 08:57:02,890 - DEBUG - 行128: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-30 08:57:02,890 - DEBUG - 行129: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 08:57:02,890 - DEBUG - 行130: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:51:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,890 - DEBUG - 行131: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 08:57:02,890 - DEBUG - 行132: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '17:55:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,891 - DEBUG - 行133: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:53:00', 'exit_time': '18:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,891 - DEBUG - 行134: セクション終了
+2025-05-30 08:57:02,891 - DEBUG - 行137: セクション発見 '時間効率重視 終日版'
+2025-05-30 08:57:02,891 - DEBUG - 行150: 時刻順セクション開始 '時間効率重視 終日版'
+2025-05-30 08:57:02,891 - DEBUG - 行151: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:00:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 08:57:02,892 - DEBUG - 行152: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '12:01:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,892 - DEBUG - 行153: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 08:57:02,893 - DEBUG - 行154: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-30 08:57:02,893 - DEBUG - 行155: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 08:57:02,894 - DEBUG - 行156: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 08:57:02,894 - DEBUG - 行157: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '17:55:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,894 - DEBUG - 行158: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:53:00', 'exit_time': '18:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,896 - DEBUG - 行159: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '19:02:00', 'exit_time': '19:06:00', 'direction': 'Short'}
+2025-05-30 08:57:02,896 - DEBUG - 行160: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:43:00', 'exit_time': '21:56:00', 'direction': 'Long'}
+2025-05-30 08:57:02,897 - DEBUG - 行161: セクション終了
+2025-05-30 08:57:02,897 - DEBUG - 行164: セクション発見 '最大利益 日中版'
+2025-05-30 08:57:02,898 - DEBUG - 行177: 時刻順セクション開始 '最大利益 日中版'
+2025-05-30 08:57:02,898 - DEBUG - 行178: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '10:00:00', 'exit_time': '10:13:00', 'direction': 'Short'}
+2025-05-30 08:57:02,898 - DEBUG - 行179: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 08:57:02,899 - DEBUG - 行180: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,899 - DEBUG - 行181: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 08:57:02,899 - DEBUG - 行182: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:16:00', 'direction': 'Short'}
+2025-05-30 08:57:02,900 - DEBUG - 行183: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,900 - DEBUG - 行184: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 08:57:02,900 - DEBUG - 行185: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 08:57:02,901 - DEBUG - 行186: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,901 - DEBUG - 行187: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,901 - DEBUG - 行188: セクション終了
+2025-05-30 08:57:02,902 - DEBUG - 行191: セクション発見 '最大利益 終日版'
+2025-05-30 08:57:02,902 - DEBUG - 行204: 時刻順セクション開始 '最大利益 終日版'
+2025-05-30 08:57:02,902 - DEBUG - 行205: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 08:57:02,903 - DEBUG - 行206: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 08:57:02,903 - DEBUG - 行207: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 08:57:02,904 - DEBUG - 行208: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:16:00', 'direction': 'Short'}
+2025-05-30 08:57:02,904 - DEBUG - 行209: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,905 - DEBUG - 行210: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 08:57:02,906 - DEBUG - 行211: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 08:57:02,906 - DEBUG - 行212: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,907 - DEBUG - 行213: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,907 - DEBUG - 行214: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:43:00', 'exit_time': '21:58:00', 'direction': 'Long'}
+2025-05-30 08:57:02,908 - DEBUG - 行215: セクション終了
+2025-05-30 08:57:02,909 - INFO - ✅ 検証ファイル読み込み完了:
+2025-05-30 08:57:02,910 - INFO -   - 利益効率（Hatch検証）日中版: 10件
+2025-05-30 08:57:02,910 - INFO -   - 利益効率（Hatch検証）: 10件
+2025-05-30 08:57:02,910 - INFO -   - 勝率重視（ぶりんださん検証） 日中版: 10件
+2025-05-30 08:57:02,911 - INFO -   - 勝率重視（ぶりんださん検証）: 10件
+2025-05-30 08:57:02,911 - INFO -   - 時間効率重視 日中版: 10件
+2025-05-30 08:57:02,911 - INFO -   - 時間効率重視 終日版: 10件
+2025-05-30 08:57:02,912 - INFO -   - 最大利益 日中版: 10件
+2025-05-30 08:57:02,912 - INFO -   - 最大利益 終日版: 10件
+2025-05-30 08:57:02,912 - INFO - 📊 検証ファイル総エントリー数: 80件
+2025-05-30 08:57:02,913 - INFO - 📈 Step 2: レート収集
+2025-05-30 08:57:02,913 - INFO - 📈 エントリーポイントレート収集開始
+2025-05-30 08:57:02,915 - INFO - レート取得: USDJPY 08:48:00-08:59:00 Long
+2025-05-30 08:57:02,915 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.414, ASK=150.442
+2025-05-30 08:57:03,124 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.33, ASK=151.353
+2025-05-30 08:57:03,124 - INFO -   ✅ USDJPY: エントリー=150.442, エグジット=151.33, Pips差=88.8
+2025-05-30 08:57:03,639 - INFO - レート取得: USDJPY 08:59:00-09:13:00 Short
+2025-05-30 08:57:03,640 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.277, ASK=151.296
+2025-05-30 08:57:03,841 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.611, ASK=150.64
+2025-05-30 08:57:03,841 - INFO -   ✅ USDJPY: エントリー=151.277, エグジット=150.64, Pips差=63.7
+2025-05-30 08:57:04,341 - INFO - レート取得: EURJPY 09:34:00-09:48:00 Short
+2025-05-30 08:57:04,341 - DEBUG - 🧪 テストデータ生成: EURJPY BID=167.771, ASK=167.793
+2025-05-30 08:57:04,543 - DEBUG - 🧪 テストデータ生成: EURJPY BID=162.311, ASK=162.336
+2025-05-30 08:57:04,543 - INFO -   ✅ EURJPY: エントリー=167.771, エグジット=162.336, Pips差=543.5
+2025-05-30 08:57:05,054 - INFO - レート取得: USDJPY 11:44:00-11:59:00 Long
+2025-05-30 08:57:05,054 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.452, ASK=151.468
+2025-05-30 08:57:05,257 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.618, ASK=151.63
+2025-05-30 08:57:05,257 - INFO -   ✅ USDJPY: エントリー=151.468, エグジット=151.618, Pips差=15.0
+2025-05-30 08:57:05,774 - INFO - レート取得: USDJPY 14:43:00-14:58:00 Short
+2025-05-30 08:57:05,774 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.749, ASK=151.769
+2025-05-30 08:57:05,990 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.27, ASK=148.279
+2025-05-30 08:57:05,990 - INFO -   ✅ USDJPY: エントリー=151.749, エグジット=148.279, Pips差=347.0
+2025-05-30 08:57:06,490 - INFO - レート取得: CHFJPY 17:17:00-17:29:00 Long
+2025-05-30 08:57:06,490 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=171.694, ASK=171.721
+2025-05-30 08:57:06,693 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=169.225, ASK=169.231
+2025-05-30 08:57:06,693 - INFO -   ✅ CHFJPY: エントリー=171.721, エグジット=169.225, Pips差=-249.6
+2025-05-30 08:57:07,206 - INFO - レート取得: USDJPY 17:32:00-17:38:00 Short
+2025-05-30 08:57:07,207 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.027, ASK=150.039
+2025-05-30 08:57:07,409 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.842, ASK=148.854
+2025-05-30 08:57:07,409 - INFO -   ✅ USDJPY: エントリー=150.027, エグジット=148.854, Pips差=117.3
+2025-05-30 08:57:07,923 - INFO - レート取得: CHFJPY 17:47:00-17:58:00 Long
+2025-05-30 08:57:07,923 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=165.4, ASK=165.422
+2025-05-30 08:57:08,130 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=166.357, ASK=166.38
+2025-05-30 08:57:08,130 - INFO -   ✅ CHFJPY: エントリー=165.422, エグジット=166.357, Pips差=93.5
+2025-05-30 08:57:08,644 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-30 08:57:08,644 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.697, ASK=151.703
+2025-05-30 08:57:08,847 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.754, ASK=151.774
+2025-05-30 08:57:08,847 - INFO -   ✅ USDJPY: エントリー=151.703, エグジット=151.754, Pips差=5.1
+2025-05-30 08:57:09,361 - INFO - 📊 検証データレート収集開始
+2025-05-30 08:57:09,361 - INFO - セクション処理: 利益効率（Hatch検証）日中版 (10件)
+2025-05-30 08:57:09,361 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-30 08:57:09,361 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.616, ASK=150.627
+2025-05-30 08:57:09,563 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.492, ASK=151.501
+2025-05-30 08:57:09,563 - INFO -   ✅ USDJPY: エントリー=150.616, エグジット=151.501, Pips差=-88.5
+2025-05-30 08:57:10,063 - INFO - レート取得: USDJPY 11:43:00-11:54:00 Long
+2025-05-30 08:57:10,063 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.781, ASK=151.804
+2025-05-30 08:57:10,267 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.608, ASK=150.618
+2025-05-30 08:57:10,267 - INFO -   ✅ USDJPY: エントリー=151.804, エグジット=150.608, Pips差=-119.6
+2025-05-30 08:57:10,781 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-30 08:57:10,781 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.469, ASK=151.479
+2025-05-30 08:57:10,983 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.588, ASK=151.602
+2025-05-30 08:57:10,983 - INFO -   ✅ USDJPY: エントリー=151.469, エグジット=151.602, Pips差=-13.3
+2025-05-30 08:57:11,498 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-30 08:57:11,498 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.93, ASK=148.945
+2025-05-30 08:57:11,699 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.319, ASK=149.339
+2025-05-30 08:57:11,699 - INFO -   ✅ USDJPY: エントリー=148.93, エグジット=149.339, Pips差=-40.9
+2025-05-30 08:57:12,200 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-30 08:57:12,200 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.951, ASK=151.96
+2025-05-30 08:57:12,402 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.355, ASK=149.37
+2025-05-30 08:57:12,402 - INFO -   ✅ USDJPY: エントリー=151.951, エグジット=149.37, Pips差=258.1
+2025-05-30 08:57:12,914 - INFO - レート取得: EURJPY 16:48:00-16:56:00 Long
+2025-05-30 08:57:12,914 - DEBUG - 🧪 テストデータ生成: EURJPY BID=169.368, ASK=169.394
+2025-05-30 08:57:13,117 - DEBUG - 🧪 テストデータ生成: EURJPY BID=167.111, ASK=167.124
+2025-05-30 08:57:13,117 - INFO -   ✅ EURJPY: エントリー=169.394, エグジット=167.111, Pips差=-228.3
+2025-05-30 08:57:13,630 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-30 08:57:13,630 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=174.037, ASK=174.047
+2025-05-30 08:57:13,831 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=168.785, ASK=168.814
+2025-05-30 08:57:13,831 - INFO -   ✅ CHFJPY: エントリー=174.047, エグジット=168.785, Pips差=-526.2
+2025-05-30 08:57:14,344 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-30 08:57:14,344 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=169.375, ASK=169.385
+2025-05-30 08:57:14,547 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=166.356, ASK=166.361
+2025-05-30 08:57:14,547 - INFO -   ✅ CHFJPY: エントリー=169.375, エグジット=166.361, Pips差=301.4
+2025-05-30 08:57:15,061 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-30 08:57:15,061 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=166.558, ASK=166.579
+2025-05-30 08:57:15,263 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=165.96, ASK=165.978
+2025-05-30 08:57:15,263 - INFO -   ✅ CHFJPY: エントリー=166.579, エグジット=165.96, Pips差=-61.9
+2025-05-30 08:57:15,775 - INFO - レート取得: USDJPY 18:54:00-18:58:00 Long
+2025-05-30 08:57:15,775 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.957, ASK=150.977
+2025-05-30 08:57:15,977 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.968, ASK=148.975
+2025-05-30 08:57:15,977 - INFO -   ✅ USDJPY: エントリー=150.977, エグジット=148.968, Pips差=-200.9
+2025-05-30 08:57:16,492 - INFO - セクション処理: 利益効率（Hatch検証） (10件)
+2025-05-30 08:57:16,492 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-30 08:57:16,492 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.999, ASK=151.011
+2025-05-30 08:57:16,693 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.703, ASK=148.712
+2025-05-30 08:57:16,693 - INFO -   ✅ USDJPY: エントリー=150.999, エグジット=148.712, Pips差=228.7
+2025-05-30 08:57:17,208 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-30 08:57:17,208 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.68, ASK=149.707
+2025-05-30 08:57:17,412 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.202, ASK=151.213
+2025-05-30 08:57:17,412 - INFO -   ✅ USDJPY: エントリー=149.68, エグジット=151.213, Pips差=-153.3
+2025-05-30 08:57:17,926 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-30 08:57:17,926 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.985, ASK=149.001
+2025-05-30 08:57:18,129 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.469, ASK=148.488
+2025-05-30 08:57:18,129 - INFO -   ✅ USDJPY: エントリー=148.985, エグジット=148.488, Pips差=49.7
+2025-05-30 08:57:18,641 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-30 08:57:18,641 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.318, ASK=149.342
+2025-05-30 08:57:18,842 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.631, ASK=150.641
+2025-05-30 08:57:18,842 - INFO -   ✅ USDJPY: エントリー=149.318, エグジット=150.641, Pips差=-132.3
+2025-05-30 08:57:19,357 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-30 08:57:19,357 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=173.166, ASK=173.184
+2025-05-30 08:57:19,559 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=168.246, ASK=168.264
+2025-05-30 08:57:19,559 - INFO -   ✅ CHFJPY: エントリー=173.184, エグジット=168.246, Pips差=-493.8
+2025-05-30 08:57:20,073 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-30 08:57:20,073 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=174.544, ASK=174.567
+2025-05-30 08:57:20,275 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=167.712, ASK=167.722
+2025-05-30 08:57:20,275 - INFO -   ✅ CHFJPY: エントリー=174.544, エグジット=167.722, Pips差=682.2
+2025-05-30 08:57:20,790 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-30 08:57:20,790 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=167.487, ASK=167.509
+2025-05-30 08:57:20,992 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=168.791, ASK=168.807
+2025-05-30 08:57:20,992 - INFO -   ✅ CHFJPY: エントリー=167.509, エグジット=168.791, Pips差=128.2
+2025-05-30 08:57:21,506 - INFO - レート取得: USDJPY 18:54:00-18:58:00 Long
+2025-05-30 08:57:21,506 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.855, ASK=151.882
+2025-05-30 08:57:21,706 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.605, ASK=149.63
+2025-05-30 08:57:21,706 - INFO -   ✅ USDJPY: エントリー=151.882, エグジット=149.605, Pips差=-227.7
+2025-05-30 08:57:22,219 - INFO - レート取得: EURUSD 21:08:00-21:11:00 Short
+2025-05-30 08:57:22,219 - DEBUG - 🧪 テストデータ生成: EURUSD BID=1.07992, ASK=1.08
+2025-05-30 08:57:22,422 - DEBUG - 🧪 テストデータ生成: EURUSD BID=1.07924, ASK=1.07938
+2025-05-30 08:57:22,422 - INFO -   ✅ EURUSD: エントリー=1.07992, エグジット=1.07938, Pips差=5.4
+2025-05-30 08:57:22,938 - INFO - レート取得: USDJPY 21:42:00-21:57:00 Long
+2025-05-30 08:57:22,938 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.199, ASK=151.228
+2025-05-30 08:57:23,139 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.56, ASK=150.574
+2025-05-30 08:57:23,139 - INFO -   ✅ USDJPY: エントリー=151.228, エグジット=150.56, Pips差=-66.8
+2025-05-30 08:57:23,651 - INFO - セクション処理: 勝率重視（ぶりんださん検証） 日中版 (10件)
+2025-05-30 08:57:23,651 - INFO - レート取得: AUDUSD 10:05:00-10:19:00 Long
+2025-05-30 08:57:23,651 - DEBUG - 🧪 テストデータ生成: AUDUSD BID=0.66126, ASK=0.66138
+2025-05-30 08:57:23,854 - DEBUG - 🧪 テストデータ生成: AUDUSD BID=0.65213, ASK=0.65238
+2025-05-30 08:57:23,854 - INFO -   ✅ AUDUSD: エントリー=0.66138, エグジット=0.65213, Pips差=-92.5
+2025-05-30 12:08:15,842 - INFO - 🚀 FXレート収集システム開始 (OAuth2対応版)
+2025-05-30 12:08:15,843 - INFO - 📋 システム初期化を開始します...
+2025-05-30 12:08:15,843 - INFO - 🧪 テストモードで実行します（実際のAPI呼び出しは行いません）
+2025-05-30 12:08:15,843 - DEBUG - 2/3: 通貨ペアUICマッピング確認中...
+2025-05-30 12:08:15,844 - INFO - 📊 対応通貨ペア数: 8
+2025-05-30 12:08:15,845 - DEBUG -   - USDJPY: UIC 31
+2025-05-30 12:08:15,845 - DEBUG -   - EURJPY: UIC 16
+2025-05-30 12:08:15,845 - DEBUG -   - GBPJPY: UIC 154
+2025-05-30 12:08:15,845 - DEBUG -   - AUDJPY: UIC 4
+2025-05-30 12:08:15,846 - DEBUG -   - CHFJPY: UIC 14
+2025-05-30 12:08:15,846 - DEBUG -   - EURUSD: UIC 21
+2025-05-30 12:08:15,846 - DEBUG -   - GBPUSD: UIC 22
+2025-05-30 12:08:15,847 - DEBUG -   - AUDUSD: UIC 2
+2025-05-30 12:08:15,847 - DEBUG - 3/3: ファイル存在確認中...
+2025-05-30 12:08:15,847 - INFO - ✅ システム初期化完了
+2025-05-30 12:08:15,847 - INFO - ================================================================================
+2025-05-30 12:08:15,848 - INFO - 🎬 FXレート収集開始（OAuth2対応版）
+2025-05-30 12:08:15,848 - INFO - ================================================================================
+2025-05-30 12:08:15,848 - INFO - 📂 Step 1: ファイル読み込み
+2025-05-30 12:08:15,851 - INFO - 📁 最新エントリーポイントファイル: entrypoints_20250530.csv
+2025-05-30 12:08:15,862 - INFO - ✅ エントリーポイント読み込み完了: 9件
+2025-05-30 12:08:15,862 - INFO - 📊 通貨ペア別内訳:
+2025-05-30 12:08:15,864 - INFO -   - USDJPY: 6件
+2025-05-30 12:08:15,865 - INFO -   - CHFJPY: 2件
+2025-05-30 12:08:15,865 - INFO -   - EURJPY: 1件
+2025-05-30 12:08:15,866 - INFO - 📁 最新検証ファイル: アノマリーFX 検証ポイント2025年05月25日 - エントリーポイント.csv
+2025-05-30 12:08:15,882 - DEBUG - 検証ファイル総行数: 216
+2025-05-30 12:08:15,883 - DEBUG - 行2: セクション発見 '利益効率（Hatch検証）日中版'
+2025-05-30 12:08:15,883 - DEBUG - 行15: 時刻順セクション開始 '利益効率（Hatch検証）日中版'
+2025-05-30 12:08:15,884 - DEBUG - 行16: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 12:08:15,884 - DEBUG - 行17: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:43:00', 'exit_time': '11:54:00', 'direction': 'Long'}
+2025-05-30 12:08:15,885 - DEBUG - 行18: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,885 - DEBUG - 行19: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 12:08:15,886 - DEBUG - 行20: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 12:08:15,886 - DEBUG - 行21: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,886 - DEBUG - 行22: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 12:08:15,886 - DEBUG - 行23: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 12:08:15,886 - DEBUG - 行24: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,886 - DEBUG - 行25: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:54:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,887 - DEBUG - 行26: セクション終了
+2025-05-30 12:08:15,887 - DEBUG - 行29: セクション発見 '利益効率（Hatch検証）'
+2025-05-30 12:08:15,887 - DEBUG - 行42: 時刻順セクション開始 '利益効率（Hatch検証）'
+2025-05-30 12:08:15,887 - DEBUG - 行43: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 12:08:15,888 - DEBUG - 行44: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,888 - DEBUG - 行45: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 12:08:15,888 - DEBUG - 行46: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 12:08:15,888 - DEBUG - 行47: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 12:08:15,888 - DEBUG - 行48: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 12:08:15,888 - DEBUG - 行49: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,889 - DEBUG - 行50: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:54:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,889 - DEBUG - 行51: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '21:08:00', 'exit_time': '21:11:00', 'direction': 'Short'}
+2025-05-30 12:08:15,889 - DEBUG - 行52: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:42:00', 'exit_time': '21:57:00', 'direction': 'Long'}
+2025-05-30 12:08:15,890 - DEBUG - 行53: セクション終了
+2025-05-30 12:08:15,890 - DEBUG - 行56: セクション発見 '勝率重視（ぶりんださん検証） 日中版'
+2025-05-30 12:08:15,890 - DEBUG - 行69: 時刻順セクション開始 '勝率重視（ぶりんださん検証） 日中版'
+2025-05-30 12:08:15,890 - DEBUG - 行70: データ追加 {'currency_pair': 'AUDUSD', 'entry_time': '10:05:00', 'exit_time': '10:19:00', 'direction': 'Long'}
+2025-05-30 12:08:15,891 - DEBUG - 行71: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '10:56:00', 'direction': 'Short'}
+2025-05-30 12:08:15,891 - DEBUG - 行72: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '10:59:00', 'exit_time': '11:10:00', 'direction': 'Long'}
+2025-05-30 12:08:15,891 - DEBUG - 行73: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,891 - DEBUG - 行74: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 12:08:15,891 - DEBUG - 行75: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-30 12:08:15,891 - DEBUG - 行76: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:13:00', 'direction': 'Short'}
+2025-05-30 12:08:15,893 - DEBUG - 行77: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,893 - DEBUG - 行78: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:31:00', 'direction': 'Long'}
+2025-05-30 12:08:15,893 - DEBUG - 行79: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,893 - DEBUG - 行80: セクション終了
+2025-05-30 12:08:15,893 - DEBUG - 行83: セクション発見 '勝率重視（ぶりんださん検証）'
+2025-05-30 12:08:15,893 - DEBUG - 行96: 時刻順セクション開始 '勝率重視（ぶりんださん検証）'
+2025-05-30 12:08:15,894 - DEBUG - 行97: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '10:59:00', 'exit_time': '11:10:00', 'direction': 'Long'}
+2025-05-30 12:08:15,894 - DEBUG - 行98: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,894 - DEBUG - 行99: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 12:08:15,894 - DEBUG - 行100: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:13:00', 'direction': 'Short'}
+2025-05-30 12:08:15,894 - DEBUG - 行101: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,894 - DEBUG - 行102: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:31:00', 'direction': 'Long'}
+2025-05-30 12:08:15,894 - DEBUG - 行103: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,894 - DEBUG - 行104: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '20:08:00', 'exit_time': '20:19:00', 'direction': 'Short'}
+2025-05-30 12:08:15,895 - DEBUG - 行105: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '21:08:00', 'exit_time': '21:11:00', 'direction': 'Short'}
+2025-05-30 12:08:15,895 - DEBUG - 行106: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:46:00', 'exit_time': '21:59:00', 'direction': 'Long'}
+2025-05-30 12:08:15,895 - DEBUG - 行107: セクション終了
+2025-05-30 12:08:15,895 - DEBUG - 行110: セクション発見 '時間効率重視 日中版'
+2025-05-30 12:08:15,895 - DEBUG - 行123: 時刻順セクション開始 '時間効率重視 日中版'
+2025-05-30 12:08:15,896 - DEBUG - 行124: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:03:00', 'exit_time': '10:12:00', 'direction': 'Short'}
+2025-05-30 12:08:15,896 - DEBUG - 行125: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:00:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 12:08:15,896 - DEBUG - 行126: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '12:01:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,896 - DEBUG - 行127: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 12:08:15,896 - DEBUG - 行128: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-30 12:08:15,896 - DEBUG - 行129: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 12:08:15,897 - DEBUG - 行130: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:51:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,897 - DEBUG - 行131: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 12:08:15,897 - DEBUG - 行132: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '17:55:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,897 - DEBUG - 行133: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:53:00', 'exit_time': '18:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,897 - DEBUG - 行134: セクション終了
+2025-05-30 12:08:15,897 - DEBUG - 行137: セクション発見 '時間効率重視 終日版'
+2025-05-30 12:08:15,898 - DEBUG - 行150: 時刻順セクション開始 '時間効率重視 終日版'
+2025-05-30 12:08:15,898 - DEBUG - 行151: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:00:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 12:08:15,898 - DEBUG - 行152: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '12:01:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,898 - DEBUG - 行153: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-30 12:08:15,898 - DEBUG - 行154: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-30 12:08:15,898 - DEBUG - 行155: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-30 12:08:15,899 - DEBUG - 行156: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 12:08:15,899 - DEBUG - 行157: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '17:55:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,899 - DEBUG - 行158: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:53:00', 'exit_time': '18:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,899 - DEBUG - 行159: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '19:02:00', 'exit_time': '19:06:00', 'direction': 'Short'}
+2025-05-30 12:08:15,899 - DEBUG - 行160: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:43:00', 'exit_time': '21:56:00', 'direction': 'Long'}
+2025-05-30 12:08:15,900 - DEBUG - 行161: セクション終了
+2025-05-30 12:08:15,900 - DEBUG - 行164: セクション発見 '最大利益 日中版'
+2025-05-30 12:08:15,900 - DEBUG - 行177: 時刻順セクション開始 '最大利益 日中版'
+2025-05-30 12:08:15,900 - DEBUG - 行178: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '10:00:00', 'exit_time': '10:13:00', 'direction': 'Short'}
+2025-05-30 12:08:15,900 - DEBUG - 行179: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 12:08:15,900 - DEBUG - 行180: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,901 - DEBUG - 行181: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 12:08:15,901 - DEBUG - 行182: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:16:00', 'direction': 'Short'}
+2025-05-30 12:08:15,901 - DEBUG - 行183: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,901 - DEBUG - 行184: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 12:08:15,901 - DEBUG - 行185: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 12:08:15,901 - DEBUG - 行186: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,901 - DEBUG - 行187: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,901 - DEBUG - 行188: セクション終了
+2025-05-30 12:08:15,903 - DEBUG - 行191: セクション発見 '最大利益 終日版'
+2025-05-30 12:08:15,903 - DEBUG - 行204: 時刻順セクション開始 '最大利益 終日版'
+2025-05-30 12:08:15,903 - DEBUG - 行205: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-30 12:08:15,903 - DEBUG - 行206: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-30 12:08:15,903 - DEBUG - 行207: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-30 12:08:15,903 - DEBUG - 行208: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:16:00', 'direction': 'Short'}
+2025-05-30 12:08:15,904 - DEBUG - 行209: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,904 - DEBUG - 行210: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-30 12:08:15,904 - DEBUG - 行211: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-30 12:08:15,904 - DEBUG - 行212: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,904 - DEBUG - 行213: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,904 - DEBUG - 行214: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:43:00', 'exit_time': '21:58:00', 'direction': 'Long'}
+2025-05-30 12:08:15,905 - DEBUG - 行215: セクション終了
+2025-05-30 12:08:15,905 - INFO - ✅ 検証ファイル読み込み完了:
+2025-05-30 12:08:15,905 - INFO -   - 利益効率（Hatch検証）日中版: 10件
+2025-05-30 12:08:15,905 - INFO -   - 利益効率（Hatch検証）: 10件
+2025-05-30 12:08:15,905 - INFO -   - 勝率重視（ぶりんださん検証） 日中版: 10件
+2025-05-30 12:08:15,905 - INFO -   - 勝率重視（ぶりんださん検証）: 10件
+2025-05-30 12:08:15,906 - INFO -   - 時間効率重視 日中版: 10件
+2025-05-30 12:08:15,906 - INFO -   - 時間効率重視 終日版: 10件
+2025-05-30 12:08:15,906 - INFO -   - 最大利益 日中版: 10件
+2025-05-30 12:08:15,906 - INFO -   - 最大利益 終日版: 10件
+2025-05-30 12:08:15,906 - INFO - 📊 検証ファイル総エントリー数: 80件
+2025-05-30 12:08:15,906 - INFO - 📈 Step 2: レート収集
+2025-05-30 12:08:15,907 - INFO - 📈 エントリーポイントレート収集開始
+2025-05-30 12:08:15,907 - INFO - レート取得: USDJPY 08:48:00-08:59:00 Long
+2025-05-30 12:08:15,907 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.847, ASK=151.856
+2025-05-30 12:08:16,110 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.606, ASK=149.616
+2025-05-30 12:08:16,110 - INFO -   ✅ USDJPY: エントリー=151.856, エグジット=149.606, Pips差=-225.0
+2025-05-30 12:08:16,624 - INFO - レート取得: USDJPY 08:59:00-09:13:00 Short
+2025-05-30 12:08:16,624 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.395, ASK=148.415
+2025-05-30 12:08:16,829 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.021, ASK=148.043
+2025-05-30 12:08:16,829 - INFO -   ✅ USDJPY: エントリー=148.395, エグジット=148.043, Pips差=35.2
+2025-05-30 12:08:17,332 - INFO - レート取得: EURJPY 09:34:00-09:48:00 Short
+2025-05-30 12:08:17,332 - DEBUG - 🧪 テストデータ生成: EURJPY BID=165.416, ASK=165.437
+2025-05-30 12:08:17,536 - DEBUG - 🧪 テストデータ生成: EURJPY BID=165.694, ASK=165.71
+2025-05-30 12:08:17,536 - INFO -   ✅ EURJPY: エントリー=165.416, エグジット=165.71, Pips差=-29.4
+2025-05-30 12:08:18,039 - INFO - レート取得: USDJPY 11:44:00-11:59:00 Long
+2025-05-30 12:08:18,039 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.438, ASK=149.461
+2025-05-30 12:08:18,243 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.204, ASK=151.209
+2025-05-30 12:08:18,243 - INFO -   ✅ USDJPY: エントリー=149.461, エグジット=151.204, Pips差=174.3
+2025-05-30 12:08:18,748 - INFO - レート取得: USDJPY 14:43:00-14:58:00 Short
+2025-05-30 12:08:18,748 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.264, ASK=150.269
+2025-05-30 12:08:18,951 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.331, ASK=150.349
+2025-05-30 12:08:18,951 - INFO -   ✅ USDJPY: エントリー=150.264, エグジット=150.349, Pips差=-8.5
+2025-05-30 12:08:19,457 - INFO - レート取得: CHFJPY 17:17:00-17:29:00 Long
+2025-05-30 12:08:19,457 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=167.117, ASK=167.141
+2025-05-30 12:08:19,660 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=166.024, ASK=166.044
+2025-05-30 12:08:19,660 - INFO -   ✅ CHFJPY: エントリー=167.141, エグジット=166.024, Pips差=-111.7
+2025-05-30 12:08:20,162 - INFO - レート取得: USDJPY 17:32:00-17:38:00 Short
+2025-05-30 12:08:20,162 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.757, ASK=149.785
+2025-05-30 12:08:20,366 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.585, ASK=151.594
+2025-05-30 12:08:20,366 - INFO -   ✅ USDJPY: エントリー=149.757, エグジット=151.594, Pips差=-183.7
+2025-05-30 12:08:20,867 - INFO - レート取得: CHFJPY 17:47:00-17:58:00 Long
+2025-05-30 12:08:20,867 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=172.343, ASK=172.361
+2025-05-30 12:08:21,069 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=167.797, ASK=167.811
+2025-05-30 12:08:21,069 - INFO -   ✅ CHFJPY: エントリー=172.361, エグジット=167.797, Pips差=-456.4
+2025-05-30 12:08:21,570 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-30 12:08:21,570 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.503, ASK=149.513
+2025-05-30 12:08:21,773 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.044, ASK=151.052
+2025-05-30 12:08:21,773 - INFO -   ✅ USDJPY: エントリー=149.513, エグジット=151.044, Pips差=153.1
+2025-05-30 12:08:22,275 - INFO - 📊 検証データレート収集開始
+2025-05-30 12:08:22,275 - INFO - セクション処理: 利益効率（Hatch検証）日中版 (10件)
+2025-05-30 12:08:22,276 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-30 12:08:22,276 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.642, ASK=150.668
+2025-05-30 12:08:22,476 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.122, ASK=149.149
+2025-05-30 12:08:22,476 - INFO -   ✅ USDJPY: エントリー=150.642, エグジット=149.149, Pips差=149.3
+2025-05-30 12:08:22,983 - INFO - レート取得: USDJPY 11:43:00-11:54:00 Long
+2025-05-30 12:08:22,983 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.198, ASK=150.224
+2025-05-30 12:08:23,186 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.737, ASK=149.764
+2025-05-30 12:08:23,186 - INFO -   ✅ USDJPY: エントリー=150.224, エグジット=149.737, Pips差=-48.7
+2025-05-30 12:08:23,700 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-30 12:08:23,700 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.881, ASK=148.905
+2025-05-30 12:08:23,904 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.534, ASK=149.552
+2025-05-30 12:08:23,904 - INFO -   ✅ USDJPY: エントリー=148.881, エグジット=149.552, Pips差=-67.1
+2025-05-30 12:08:24,418 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-30 12:08:24,418 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.146, ASK=151.166
+2025-05-30 12:08:24,622 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.377, ASK=150.389
+2025-05-30 12:08:24,622 - INFO -   ✅ USDJPY: エントリー=151.146, エグジット=150.389, Pips差=75.7
+2025-05-30 12:08:25,138 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-30 12:08:25,138 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.565, ASK=148.571
+2025-05-30 12:08:25,340 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.186, ASK=149.205
+2025-05-30 12:08:25,340 - INFO -   ✅ USDJPY: エントリー=148.565, エグジット=149.205, Pips差=-64.0
+2025-05-30 12:08:25,854 - INFO - レート取得: EURJPY 16:48:00-16:56:00 Long
+2025-05-30 12:08:25,854 - DEBUG - 🧪 テストデータ生成: EURJPY BID=162.04, ASK=162.054
+2025-05-30 12:08:26,057 - DEBUG - 🧪 テストデータ生成: EURJPY BID=164.48, ASK=164.493
+2025-05-30 12:08:26,057 - INFO -   ✅ EURJPY: エントリー=162.054, エグジット=164.48, Pips差=242.6
+2025-05-30 12:08:26,557 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-30 12:08:26,557 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=172.138, ASK=172.166
+2025-05-30 12:08:26,759 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=174.905, ASK=174.925
+2025-05-30 12:08:26,759 - INFO -   ✅ CHFJPY: エントリー=172.166, エグジット=174.905, Pips差=273.9
+2025-05-30 12:08:27,260 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-30 12:08:27,260 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=169.585, ASK=169.593
+2025-05-30 12:08:27,464 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=166.056, ASK=166.079
+2025-05-30 12:08:27,464 - INFO -   ✅ CHFJPY: エントリー=169.585, エグジット=166.079, Pips差=350.6
+2025-05-30 12:08:27,965 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-30 12:08:27,965 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=166.017, ASK=166.027
+2025-05-30 12:08:28,170 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=169.159, ASK=169.178
+2025-05-30 12:08:28,170 - INFO -   ✅ CHFJPY: エントリー=166.027, エグジット=169.159, Pips差=313.2
+2025-05-30 12:08:28,685 - INFO - レート取得: USDJPY 18:54:00-18:58:00 Long
+2025-05-30 12:08:28,685 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.884, ASK=151.897
+2025-05-30 12:08:28,889 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.447, ASK=150.469
+2025-05-30 12:08:28,889 - INFO -   ✅ USDJPY: エントリー=151.897, エグジット=150.447, Pips差=-145.0
+2025-05-30 12:08:29,389 - INFO - セクション処理: 利益効率（Hatch検証） (10件)
+2025-05-30 12:08:29,389 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-30 12:08:29,389 - DEBUG - 🧪 テストデータ生成: USDJPY BID=148.919, ASK=148.937
+2025-05-30 12:08:29,593 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.083, ASK=151.108
+2025-05-30 12:08:29,593 - INFO -   ✅ USDJPY: エントリー=148.919, エグジット=151.108, Pips差=-218.9
+2025-05-30 12:08:30,109 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-30 12:08:30,109 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.749, ASK=151.761
+2025-05-30 12:08:30,312 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.942, ASK=151.967
+2025-05-30 12:08:30,312 - INFO -   ✅ USDJPY: エントリー=151.749, エグジット=151.967, Pips差=-21.8
+2025-05-30 12:08:30,813 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-30 12:08:30,813 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.828, ASK=151.834
+2025-05-30 12:08:31,017 - DEBUG - 🧪 テストデータ生成: USDJPY BID=150.095, ASK=150.122
+2025-05-30 12:08:31,017 - INFO -   ✅ USDJPY: エントリー=151.828, エグジット=150.122, Pips差=170.6
+2025-05-30 12:08:31,518 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-30 12:08:31,518 - DEBUG - 🧪 テストデータ生成: USDJPY BID=149.027, ASK=149.049
+2025-05-30 12:08:31,722 - DEBUG - 🧪 テストデータ生成: USDJPY BID=151.492, ASK=151.513
+2025-05-30 12:08:31,722 - INFO -   ✅ USDJPY: エントリー=149.027, エグジット=151.513, Pips差=-248.6
+2025-05-30 12:08:32,222 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-30 12:08:32,222 - DEBUG - 🧪 テストデータ生成: CHFJPY BID=169.438, ASK=169.449

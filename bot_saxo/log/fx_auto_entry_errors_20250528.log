@@ -1,0 +1,12 @@
+2025-05-28 14:52:00 - ERROR - [get_current_price] - 価格取得失敗: USDJPY (ステータス: 401)
+2025-05-28 14:52:00 - ERROR - [get_current_price] - レスポンス: 
+2025-05-28 14:52:00 - ERROR - [_process_entry_signal] - 価格取得に失敗しました。エントリーをスキップします。
+2025-05-28 17:17:00 - ERROR - [get_current_price] - 価格取得失敗: CHFJPY (ステータス: 401)
+2025-05-28 17:17:00 - ERROR - [get_current_price] - レスポンス: 
+2025-05-28 17:17:00 - ERROR - [_process_entry_signal] - 価格取得に失敗しました。エントリーをスキップします。
+2025-05-28 17:32:00 - ERROR - [get_current_price] - 価格取得失敗: USDJPY (ステータス: 401)
+2025-05-28 17:32:00 - ERROR - [get_current_price] - レスポンス: 
+2025-05-28 17:32:00 - ERROR - [_process_entry_signal] - 価格取得に失敗しました。エントリーをスキップします。
+2025-05-28 18:51:00 - ERROR - [get_current_price] - 価格取得失敗: USDJPY (ステータス: 401)
+2025-05-28 18:51:00 - ERROR - [get_current_price] - レスポンス: 
+2025-05-28 18:51:00 - ERROR - [_process_entry_signal] - 価格取得に失敗しました。エントリーをスキップします。

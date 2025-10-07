@@ -1,0 +1,1056 @@
+2025-05-31 06:31:03 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-31 06:31:03 - INFO - [main] - 📁 ログディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 06:31:03 - INFO - [__init__] - ================================================================================
+2025-05-31 06:31:03 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-31 06:31:03 - INFO - [__init__] - ================================================================================
+2025-05-31 06:31:03 - DEBUG - [__init__] - システム設定:
+2025-05-31 06:31:03 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-31 06:31:03 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-31 06:31:03 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-31 06:31:03 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 06:31:03 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-31 06:31:03 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-31 06:31:03 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 06:31:03 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 401 0
+2025-05-31 06:31:03 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 401
+2025-05-31 06:31:03 - ERROR - [_get_account_info] - アカウント取得失敗: 401
+2025-05-31 06:31:03 - ERROR - [_get_account_info] - レスポンス: 
+2025-05-31 06:31:03 - ERROR - [_get_account_info] - アカウント情報取得エラー: アカウント取得失敗: 401
+2025-05-31 06:31:03 - ERROR - [_initialize_system] - ❌ システム初期化エラー: アカウント取得失敗: 401
+2025-05-31 06:31:03 - ERROR - [_initialize_system] - 初期化エラーの詳細:
+Traceback (most recent call last):
+  File "C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\bot_saxo.py", line 135, in _initialize_system
+    self._get_account_info()
+  File "C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\bot_saxo.py", line 181, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-31 06:31:03 - ERROR - [main] - システムエラー: アカウント取得失敗: 401
+2025-05-31 06:31:03 - ERROR - [main] - システムエラーの詳細:
+Traceback (most recent call last):
+  File "C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\bot_saxo.py", line 762, in main
+    fx_system = FXAutoEntrySystem()
+  File "C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\bot_saxo.py", line 126, in __init__
+    self._initialize_system()
+  File "C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\bot_saxo.py", line 135, in _initialize_system
+    self._get_account_info()
+  File "C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\bot_saxo.py", line 181, in _get_account_info
+    raise Exception(f"アカウント取得失敗: {response.status_code}")
+Exception: アカウント取得失敗: 401
+2025-05-31 10:16:51 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-31 10:16:51 - INFO - [main] - 📁 ログディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 10:16:51 - INFO - [__init__] - ================================================================================
+2025-05-31 10:16:51 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-31 10:16:51 - INFO - [__init__] - ================================================================================
+2025-05-31 10:16:51 - DEBUG - [__init__] - システム設定:
+2025-05-31 10:16:51 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-31 10:16:51 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-31 10:16:51 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-31 10:16:51 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 10:16:51 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-31 10:16:51 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-31 10:16:51 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:51 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 200 604
+2025-05-31 10:16:51 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 200
+2025-05-31 10:16:51 - DEBUG - [_get_account_info] - アカウントデータ: {
+  "Data": [
+    {
+      "AccountGroupKey": "PleHukkZT-PG8yRV|OMfTA==",
+      "AccountId": "20696194",
+      "AccountKey": "bm|tHfvNgXsN2VkCv2dcaw==",
+      "AccountSubType": "None",
+      "AccountType": "Normal",
+      "AccountValueProtectionLimit": 0.0,
+      "Active": true,
+      "CanUseCashPositionsAsMarginCollateral": true,
+      "CfdBorrowingCostsActive": false,
+      "ClientId": "20696194",
+      "ClientKey": "bm|tHfvNgXsN2VkCv2dcaw==",
+      "CreationDate": "2025-05-27T03:47:40.587000Z",
+      "Currency": "EUR",
+      "CurrencyDecimals": 2,
+      "DirectMarketAccess": false,
+      "FractionalOrderEnabled": false,
+      "FractionalOrderEnabledAssetTypes": [],
+      "IndividualMargining": true,
+      "IsCurrencyConversionAtSettlementTime": true,
+      "IsMarginTradingAllowed": true,
+      "IsShareable": false,
+      "IsTrialAccount": true,
+      "LegalAssetTypes": [
+        "FxSpot",
+        "FxForwards",
+        "ContractFutures",
+        "Stock",
+        "StockOption",
+        "Bond",
+        "FuturesOption",
+        "StockIndexOption",
+        "Cash",
+        "CfdOnStock",
+        "CfdOnIndex",
+        "StockIndex",
+        "CfdOnEtf",
+        "CfdOnEtc",
+        "CfdOnEtn",
+        "CfdOnFund",
+        "CfdOnRights",
+        "CfdOnCompanyWarrant",
+        "Etf",
+        "Etc",
+        "Etn",
+        "Fund",
+        "FxSwap",
+        "Rights",
+        "IpoOnStock",
+        "CompanyWarrant"
+      ],
+      "ManagementType": "Client",
+      "MarginCalculationMethod": "Default",
+      "MarginLendingEnabled": "None",
+      "PortfolioBasedMarginEnabled": false,
+      "Sharing": [
+        "NoSharing"
+      ],
+      "SupportsAccountValueProtectionLimit": true,
+      "UseCashPositionsAsMarginCollateral": true
+    }
+  ]
+}
+2025-05-31 10:16:51 - INFO - [_get_account_info] - ✅ アカウント取得成功
+2025-05-31 10:16:51 - INFO - [_get_account_info] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 10:16:51 - INFO - [_get_account_info] -   - 基準通貨: EUR
+2025-05-31 10:16:51 - DEBUG - [_initialize_system] - 2/3: 通貨ペアUICマッピング作成中...
+2025-05-31 10:16:51 - INFO - [_create_currency_mapping] - 🔍 通貨ペアUICマッピングを作成中...
+2025-05-31 10:16:51 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: USDJPY
+2025-05-31 10:16:51 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:51 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=USDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 218
+2025-05-31 10:16:51 - DEBUG - [_create_currency_mapping] - USDJPY: API応答 200
+2025-05-31 10:16:51 - DEBUG - [_create_currency_mapping] - USDJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "US Dollar/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41361,
+      "Identifier": 42,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "USDJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:51 - INFO - [_create_currency_mapping] -   ✅ USDJPY: UIC 42 (US Dollar/Japanese Yen)
+2025-05-31 10:16:51 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: EURJPY
+2025-05-31 10:16:51 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:52 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 216
+2025-05-31 10:16:52 - DEBUG - [_create_currency_mapping] - EURJPY: API応答 200
+2025-05-31 10:16:52 - DEBUG - [_create_currency_mapping] - EURJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Euro/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41298,
+      "Identifier": 18,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "EURJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:52 - INFO - [_create_currency_mapping] -   ✅ EURJPY: UIC 18 (Euro/Japanese Yen)
+2025-05-31 10:16:52 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: GBPJPY
+2025-05-31 10:16:52 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:52 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 223
+2025-05-31 10:16:52 - DEBUG - [_create_currency_mapping] - GBPJPY: API応答 200
+2025-05-31 10:16:52 - DEBUG - [_create_currency_mapping] - GBPJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "British Pound/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41313,
+      "Identifier": 26,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "GBPJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:52 - INFO - [_create_currency_mapping] -   ✅ GBPJPY: UIC 26 (British Pound/Japanese Yen)
+2025-05-31 10:16:52 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: AUDJPY
+2025-05-31 10:16:52 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:53 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 225
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - AUDJPY: API応答 200
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - AUDJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Australian Dollar/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41329,
+      "Identifier": 2,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "AUDJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:53 - INFO - [_create_currency_mapping] -   ✅ AUDJPY: UIC 2 (Australian Dollar/Japanese Yen)
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: CHFJPY
+2025-05-31 10:16:53 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:53 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=CHFJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 205
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - CHFJPY: API応答 200
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - CHFJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Swiss Franc/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41341,
+      "Identifier": 8,
+      "SummaryType": "Instrument",
+      "Symbol": "CHFJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:53 - INFO - [_create_currency_mapping] -   ✅ CHFJPY: UIC 8 (Swiss Franc/Japanese Yen)
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: EURUSD
+2025-05-31 10:16:53 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:53 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 214
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - EURUSD: API応答 200
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - EURUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "Euro/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41303,
+      "Identifier": 21,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "EURUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:53 - INFO - [_create_currency_mapping] -   ✅ EURUSD: UIC 21 (Euro/US Dollar)
+2025-05-31 10:16:53 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: GBPUSD
+2025-05-31 10:16:53 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:54 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 220
+2025-05-31 10:16:54 - DEBUG - [_create_currency_mapping] - GBPUSD: API応答 200
+2025-05-31 10:16:54 - DEBUG - [_create_currency_mapping] - GBPUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "British Pound/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41320,
+      "Identifier": 31,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "GBPUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:54 - INFO - [_create_currency_mapping] -   ✅ GBPUSD: UIC 31 (British Pound/US Dollar)
+2025-05-31 10:16:54 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: AUDUSD
+2025-05-31 10:16:54 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 10:16:54 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 217
+2025-05-31 10:16:54 - DEBUG - [_create_currency_mapping] - AUDUSD: API応答 200
+2025-05-31 10:16:54 - DEBUG - [_create_currency_mapping] - AUDUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "Australian Dollar/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41337,
+      "Identifier": 4,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "AUDUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 10:16:54 - INFO - [_create_currency_mapping] -   ✅ AUDUSD: UIC 4 (Australian Dollar/US Dollar)
+2025-05-31 10:16:54 - INFO - [_create_currency_mapping] - ✅ UICマッピング作成完了: 8/8通貨ペア
+2025-05-31 10:16:54 - DEBUG - [_initialize_system] - 3/3: エントリーポイント読み込み中...
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] - エントリーポイントディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\entrypoint_fx
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] - 発見されたファイル: ['entrypoints_20250430.csv', 'entrypoints_20250501.csv', 'entrypoints_20250502.csv', 'entrypoints_20250505.csv', 'entrypoints_20250506.csv', 'entrypoints_20250507.csv', 'entrypoints_20250508.csv', 'entrypoints_20250509.csv', 'entrypoints_20250512.csv', 'entrypoints_20250513.csv', 'entrypoints_20250514.csv', 'entrypoints_20250515.csv', 'entrypoints_20250516.csv', 'entrypoints_20250519.csv', 'entrypoints_20250520.csv', 'entrypoints_20250521.csv', 'entrypoints_20250522.csv', 'entrypoints_20250523.csv', 'entrypoints_20250526.csv', 'entrypoints_20250527.csv', 'entrypoints_20250528.csv', 'entrypoints_20250529.csv', 'entrypoints_20250530.csv']
+2025-05-31 10:16:54 - INFO - [_load_entry_points] - 📁 使用ファイル: entrypoints_20250530.csv
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] - ファイルパス: C:\Users\beru\Dropbox\006_TRADE\historycal\entrypoint_fx\entrypoints_20250530.csv
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] - ファイルサイズ: 658 bytes
+2025-05-31 10:16:54 - INFO - [_load_entry_points] - ✅ エントリーポイント読み込み完了: 9件
+2025-05-31 10:16:54 - INFO - [_load_entry_points] - 📊 通貨ペア別内訳:
+2025-05-31 10:16:54 - INFO - [_load_entry_points] -   - USDJPY: 6件
+2025-05-31 10:16:54 - INFO - [_load_entry_points] -   - CHFJPY: 2件
+2025-05-31 10:16:54 - INFO - [_load_entry_points] -   - EURJPY: 1件
+2025-05-31 10:16:54 - INFO - [_load_entry_points] - 📊 方向別内訳:
+2025-05-31 10:16:54 - INFO - [_load_entry_points] -   - Long: 5件
+2025-05-31 10:16:54 - INFO - [_load_entry_points] -   - Short: 4件
+2025-05-31 10:16:54 - INFO - [_load_entry_points] - ⏰ 時間範囲: 08:48:00 - 18:51:00
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] - エントリーポイントサンプル（最初の3件）:
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] -   1: 08:48:00 USDJPY Long (スコア: 7.19)
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] -   2: 08:59:00 USDJPY Short (スコア: 7.64)
+2025-05-31 10:16:54 - DEBUG - [_load_entry_points] -   3: 09:34:00 EURJPY Short (スコア: 7.06)
+2025-05-31 10:16:54 - INFO - [_initialize_system] - ✅ システム初期化完了
+2025-05-31 10:16:54 - INFO - [_initialize_system] - 📊 システム状態:
+2025-05-31 10:16:54 - INFO - [_initialize_system] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 10:16:54 - INFO - [_initialize_system] -   - 対応通貨ペア数: 8
+2025-05-31 10:16:54 - INFO - [_initialize_system] -   - エントリーポイント数: 9
+2025-05-31 10:16:54 - INFO - [start_monitoring] - 🚀 FX自動エントリーシステム監視開始
+2025-05-31 10:16:54 - INFO - [start_monitoring] - 📁 エントリーポイント数: 9
+2025-05-31 10:16:54 - INFO - [start_monitoring] - 🔧 対応通貨ペア: ['USDJPY', 'EURJPY', 'GBPJPY', 'AUDJPY', 'CHFJPY', 'EURUSD', 'GBPUSD', 'AUDUSD']
+2025-05-31 10:16:54 - INFO - [start_monitoring] - ⏰ 毎分00秒にエントリー・エグジットチェックを実行
+2025-05-31 10:16:54 - INFO - [start_monitoring] - 📂 ログ保存先: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 10:16:54 - DEBUG - [start_monitoring] - システム状態詳細:
+2025-05-31 10:16:54 - DEBUG - [start_monitoring] -   - ベースURL: https://gateway.saxobank.com/sim/openapi
+2025-05-31 10:16:54 - DEBUG - [start_monitoring] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 10:16:54 - DEBUG - [start_monitoring] -   - 最大ポジション数: 5
+2025-05-31 10:16:54 - DEBUG - [start_monitoring] -   - リスク/取引: 2.0%
+2025-05-31 10:16:54 - INFO - [start_monitoring] - 🔄 初回チェック実行...
+2025-05-31 10:16:54 - DEBUG - [run_single_check] - ============================================================
+2025-05-31 10:16:54 - DEBUG - [run_single_check] - 🔄 定期チェック実行開始
+2025-05-31 10:16:54 - DEBUG - [run_single_check] - 1/3: エントリー条件チェック...
+2025-05-31 10:16:54 - DEBUG - [check_entry_conditions] - エントリー条件チェック: 実際時刻=10:16:54, チェック対象=10:16:00
+2025-05-31 10:16:54 - DEBUG - [_show_next_entry_info] - 📅 次のエントリー: 11:44:00 (USDJPY Long) - あと1:28:00
+2025-05-31 10:16:54 - DEBUG - [run_single_check] - 2/3: エグジット条件チェック...
+2025-05-31 10:16:54 - DEBUG - [run_single_check] - 3/3: ポジション監視...
+2025-05-31 10:16:54 - DEBUG - [monitor_positions] - 📊 アクティブポジション: なし
+2025-05-31 10:16:54 - DEBUG - [run_single_check] - 🔄 定期チェック完了
+2025-05-31 10:16:54 - DEBUG - [wait_for_next_minute] - ⏰ 次のチェックまで待機: 5.6秒 (次回実行: 10:17:00)
+2025-05-31 10:17:00 - DEBUG - [run_single_check] - ============================================================
+2025-05-31 10:17:00 - DEBUG - [run_single_check] - 🔄 定期チェック実行開始
+2025-05-31 10:17:00 - DEBUG - [run_single_check] - 1/3: エントリー条件チェック...
+2025-05-31 10:17:00 - DEBUG - [check_entry_conditions] - エントリー条件チェック: 実際時刻=10:17:00, チェック対象=10:17:00
+2025-05-31 10:17:00 - DEBUG - [_show_next_entry_info] - 📅 次のエントリー: 11:44:00 (USDJPY Long) - あと1:27:00
+2025-05-31 10:17:00 - DEBUG - [run_single_check] - 2/3: エグジット条件チェック...
+2025-05-31 10:17:00 - DEBUG - [run_single_check] - 3/3: ポジション監視...
+2025-05-31 10:17:00 - DEBUG - [monitor_positions] - 📊 アクティブポジション: なし
+2025-05-31 10:17:00 - DEBUG - [run_single_check] - 🔄 定期チェック完了
+2025-05-31 10:17:00 - DEBUG - [wait_for_next_minute] - ⏰ 次のチェックまで待機: 60.0秒 (次回実行: 10:18:00)
+2025-05-31 10:17:02 - INFO - [start_monitoring] - 👋 システム停止（Ctrl+C）
+2025-05-31 10:17:02 - INFO - [start_monitoring] - 🏁 システム終了
+2025-05-31 10:17:02 - INFO - [_log_session_stats] - 📊 セッション統計:
+2025-05-31 10:17:02 - INFO - [_log_session_stats] -   - 開始時刻: 10:16:51
+2025-05-31 10:17:02 - INFO - [_log_session_stats] -   - 稼働時間: 0:00:11.202538
+2025-05-31 10:17:02 - INFO - [_log_session_stats] -   - 総エントリー数: 0
+2025-05-31 10:17:02 - INFO - [_log_session_stats] -   - 総エグジット数: 0
+2025-05-31 10:17:02 - INFO - [_log_session_stats] -   - 累計pips: 0.0
+2025-05-31 10:17:02 - INFO - [_log_session_stats] -   - アクティブポジション: 0
+2025-05-31 11:33:36 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-31 11:33:36 - INFO - [main] - 📁 ログディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 11:33:36 - INFO - [__init__] - ================================================================================
+2025-05-31 11:33:36 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-31 11:33:36 - INFO - [__init__] - ================================================================================
+2025-05-31 11:33:36 - DEBUG - [__init__] - システム設定:
+2025-05-31 11:33:36 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-31 11:33:36 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-31 11:33:36 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-31 11:33:36 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 11:33:36 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-31 11:33:36 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-31 11:33:36 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:36 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 200 604
+2025-05-31 11:33:36 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 200
+2025-05-31 11:33:36 - DEBUG - [_get_account_info] - アカウントデータ: {
+  "Data": [
+    {
+      "AccountGroupKey": "PleHukkZT-PG8yRV|OMfTA==",
+      "AccountId": "20696194",
+      "AccountKey": "bm|tHfvNgXsN2VkCv2dcaw==",
+      "AccountSubType": "None",
+      "AccountType": "Normal",
+      "AccountValueProtectionLimit": 0.0,
+      "Active": true,
+      "CanUseCashPositionsAsMarginCollateral": true,
+      "CfdBorrowingCostsActive": false,
+      "ClientId": "20696194",
+      "ClientKey": "bm|tHfvNgXsN2VkCv2dcaw==",
+      "CreationDate": "2025-05-27T03:47:40.587000Z",
+      "Currency": "EUR",
+      "CurrencyDecimals": 2,
+      "DirectMarketAccess": false,
+      "FractionalOrderEnabled": false,
+      "FractionalOrderEnabledAssetTypes": [],
+      "IndividualMargining": true,
+      "IsCurrencyConversionAtSettlementTime": true,
+      "IsMarginTradingAllowed": true,
+      "IsShareable": false,
+      "IsTrialAccount": true,
+      "LegalAssetTypes": [
+        "FxSpot",
+        "FxForwards",
+        "ContractFutures",
+        "Stock",
+        "StockOption",
+        "Bond",
+        "FuturesOption",
+        "StockIndexOption",
+        "Cash",
+        "CfdOnStock",
+        "CfdOnIndex",
+        "StockIndex",
+        "CfdOnEtf",
+        "CfdOnEtc",
+        "CfdOnEtn",
+        "CfdOnFund",
+        "CfdOnRights",
+        "CfdOnCompanyWarrant",
+        "Etf",
+        "Etc",
+        "Etn",
+        "Fund",
+        "FxSwap",
+        "Rights",
+        "IpoOnStock",
+        "CompanyWarrant"
+      ],
+      "ManagementType": "Client",
+      "MarginCalculationMethod": "Default",
+      "MarginLendingEnabled": "None",
+      "PortfolioBasedMarginEnabled": false,
+      "Sharing": [
+        "NoSharing"
+      ],
+      "SupportsAccountValueProtectionLimit": true,
+      "UseCashPositionsAsMarginCollateral": true
+    }
+  ]
+}
+2025-05-31 11:33:36 - INFO - [_get_account_info] - ✅ アカウント取得成功
+2025-05-31 11:33:36 - INFO - [_get_account_info] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 11:33:36 - INFO - [_get_account_info] -   - 基準通貨: EUR
+2025-05-31 11:33:36 - DEBUG - [_initialize_system] - 2/3: 通貨ペアUICマッピング作成中...
+2025-05-31 11:33:36 - INFO - [_create_currency_mapping] - 🔍 通貨ペアUICマッピングを作成中...
+2025-05-31 11:33:36 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: USDJPY
+2025-05-31 11:33:36 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:36 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=USDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 218
+2025-05-31 11:33:36 - DEBUG - [_create_currency_mapping] - USDJPY: API応答 200
+2025-05-31 11:33:36 - DEBUG - [_create_currency_mapping] - USDJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "US Dollar/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41361,
+      "Identifier": 42,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "USDJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:36 - INFO - [_create_currency_mapping] -   ✅ USDJPY: UIC 42 (US Dollar/Japanese Yen)
+2025-05-31 11:33:36 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: EURJPY
+2025-05-31 11:33:36 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:37 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 216
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - EURJPY: API応答 200
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - EURJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Euro/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41298,
+      "Identifier": 18,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "EURJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:37 - INFO - [_create_currency_mapping] -   ✅ EURJPY: UIC 18 (Euro/Japanese Yen)
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: GBPJPY
+2025-05-31 11:33:37 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:37 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 223
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - GBPJPY: API応答 200
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - GBPJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "British Pound/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41313,
+      "Identifier": 26,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "GBPJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:37 - INFO - [_create_currency_mapping] -   ✅ GBPJPY: UIC 26 (British Pound/Japanese Yen)
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: AUDJPY
+2025-05-31 11:33:37 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:37 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 225
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - AUDJPY: API応答 200
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - AUDJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Australian Dollar/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41329,
+      "Identifier": 2,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "AUDJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:37 - INFO - [_create_currency_mapping] -   ✅ AUDJPY: UIC 2 (Australian Dollar/Japanese Yen)
+2025-05-31 11:33:37 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: CHFJPY
+2025-05-31 11:33:37 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:38 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=CHFJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 205
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - CHFJPY: API応答 200
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - CHFJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Swiss Franc/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41341,
+      "Identifier": 8,
+      "SummaryType": "Instrument",
+      "Symbol": "CHFJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:38 - INFO - [_create_currency_mapping] -   ✅ CHFJPY: UIC 8 (Swiss Franc/Japanese Yen)
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: EURUSD
+2025-05-31 11:33:38 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:38 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 214
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - EURUSD: API応答 200
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - EURUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "Euro/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41303,
+      "Identifier": 21,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "EURUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:38 - INFO - [_create_currency_mapping] -   ✅ EURUSD: UIC 21 (Euro/US Dollar)
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: GBPUSD
+2025-05-31 11:33:38 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:38 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 220
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - GBPUSD: API応答 200
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - GBPUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "British Pound/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41320,
+      "Identifier": 31,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "GBPUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:38 - INFO - [_create_currency_mapping] -   ✅ GBPUSD: UIC 31 (British Pound/US Dollar)
+2025-05-31 11:33:38 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: AUDUSD
+2025-05-31 11:33:38 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:33:39 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 217
+2025-05-31 11:33:39 - DEBUG - [_create_currency_mapping] - AUDUSD: API応答 200
+2025-05-31 11:33:39 - DEBUG - [_create_currency_mapping] - AUDUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "Australian Dollar/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41337,
+      "Identifier": 4,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "AUDUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 11:33:39 - INFO - [_create_currency_mapping] -   ✅ AUDUSD: UIC 4 (Australian Dollar/US Dollar)
+2025-05-31 11:33:39 - INFO - [_create_currency_mapping] - ✅ UICマッピング作成完了: 8/8通貨ペア
+2025-05-31 11:33:39 - DEBUG - [_initialize_system] - 3/3: エントリーポイント読み込み中...
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] - エントリーポイントディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\entrypoint_fx
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] - 発見されたファイル: ['entrypoints_20250430.csv', 'entrypoints_20250501.csv', 'entrypoints_20250502.csv', 'entrypoints_20250505.csv', 'entrypoints_20250506.csv', 'entrypoints_20250507.csv', 'entrypoints_20250508.csv', 'entrypoints_20250509.csv', 'entrypoints_20250512.csv', 'entrypoints_20250513.csv', 'entrypoints_20250514.csv', 'entrypoints_20250515.csv', 'entrypoints_20250516.csv', 'entrypoints_20250519.csv', 'entrypoints_20250520.csv', 'entrypoints_20250521.csv', 'entrypoints_20250522.csv', 'entrypoints_20250523.csv', 'entrypoints_20250526.csv', 'entrypoints_20250527.csv', 'entrypoints_20250528.csv', 'entrypoints_20250529.csv', 'entrypoints_20250530.csv']
+2025-05-31 11:33:39 - INFO - [_load_entry_points] - 📁 使用ファイル: entrypoints_20250530.csv
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] - ファイルパス: C:\Users\beru\Dropbox\006_TRADE\historycal\entrypoint_fx\entrypoints_20250530.csv
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] - ファイルサイズ: 658 bytes
+2025-05-31 11:33:39 - INFO - [_load_entry_points] - ✅ エントリーポイント読み込み完了: 9件
+2025-05-31 11:33:39 - INFO - [_load_entry_points] - 📊 通貨ペア別内訳:
+2025-05-31 11:33:39 - INFO - [_load_entry_points] -   - USDJPY: 6件
+2025-05-31 11:33:39 - INFO - [_load_entry_points] -   - CHFJPY: 2件
+2025-05-31 11:33:39 - INFO - [_load_entry_points] -   - EURJPY: 1件
+2025-05-31 11:33:39 - INFO - [_load_entry_points] - 📊 方向別内訳:
+2025-05-31 11:33:39 - INFO - [_load_entry_points] -   - Long: 5件
+2025-05-31 11:33:39 - INFO - [_load_entry_points] -   - Short: 4件
+2025-05-31 11:33:39 - INFO - [_load_entry_points] - ⏰ 時間範囲: 08:48:00 - 18:51:00
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] - エントリーポイントサンプル（最初の3件）:
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] -   1: 08:48:00 USDJPY Long (スコア: 7.19)
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] -   2: 08:59:00 USDJPY Short (スコア: 7.64)
+2025-05-31 11:33:39 - DEBUG - [_load_entry_points] -   3: 09:34:00 EURJPY Short (スコア: 7.06)
+2025-05-31 11:33:39 - INFO - [_initialize_system] - ✅ システム初期化完了
+2025-05-31 11:33:39 - INFO - [_initialize_system] - 📊 システム状態:
+2025-05-31 11:33:39 - INFO - [_initialize_system] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 11:33:39 - INFO - [_initialize_system] -   - 対応通貨ペア数: 8
+2025-05-31 11:33:39 - INFO - [_initialize_system] -   - エントリーポイント数: 9
+2025-05-31 11:33:39 - INFO - [start_monitoring] - 🚀 FX自動エントリーシステム監視開始
+2025-05-31 11:33:39 - INFO - [start_monitoring] - 📁 エントリーポイント数: 9
+2025-05-31 11:33:39 - INFO - [start_monitoring] - 🔧 対応通貨ペア: ['USDJPY', 'EURJPY', 'GBPJPY', 'AUDJPY', 'CHFJPY', 'EURUSD', 'GBPUSD', 'AUDUSD']
+2025-05-31 11:33:39 - INFO - [start_monitoring] - ⏰ 毎分00秒にエントリー・エグジットチェックを実行
+2025-05-31 11:33:39 - INFO - [start_monitoring] - 📂 ログ保存先: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 11:33:39 - DEBUG - [start_monitoring] - システム状態詳細:
+2025-05-31 11:33:39 - DEBUG - [start_monitoring] -   - ベースURL: https://gateway.saxobank.com/sim/openapi
+2025-05-31 11:33:39 - DEBUG - [start_monitoring] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 11:33:39 - DEBUG - [start_monitoring] -   - 最大ポジション数: 5
+2025-05-31 11:33:39 - DEBUG - [start_monitoring] -   - リスク/取引: 2.0%
+2025-05-31 11:33:39 - INFO - [start_monitoring] - 🔄 初回チェック実行...
+2025-05-31 11:33:39 - DEBUG - [run_single_check] - ============================================================
+2025-05-31 11:33:39 - DEBUG - [run_single_check] - 🔄 定期チェック実行開始
+2025-05-31 11:33:39 - DEBUG - [run_single_check] - 1/3: エントリー条件チェック...
+2025-05-31 11:33:39 - DEBUG - [check_entry_conditions] - エントリー条件チェック: 実際時刻=11:33:39, チェック対象=11:33:00
+2025-05-31 11:33:39 - DEBUG - [_show_next_entry_info] - 📅 次のエントリー: 11:44:00 (USDJPY Long) - あと0:11:00
+2025-05-31 11:33:39 - DEBUG - [run_single_check] - 2/3: エグジット条件チェック...
+2025-05-31 11:33:39 - DEBUG - [run_single_check] - 3/3: ポジション監視...
+2025-05-31 11:33:39 - DEBUG - [monitor_positions] - 📊 アクティブポジション: なし
+2025-05-31 11:33:39 - DEBUG - [run_single_check] - 🔄 定期チェック完了
+2025-05-31 11:33:39 - DEBUG - [wait_for_next_minute] - ⏰ 次のチェックまで待機: 20.6秒 (次回実行: 11:34:00)
+2025-05-31 17:41:22 - INFO - [main] - 🎬 FX自動エントリーシステム開始
+2025-05-31 17:41:22 - INFO - [main] - 📁 ログディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 17:41:22 - INFO - [__init__] - ================================================================================
+2025-05-31 17:41:22 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動
+2025-05-31 17:41:22 - INFO - [__init__] - ================================================================================
+2025-05-31 17:41:22 - DEBUG - [__init__] - システム設定:
+2025-05-31 17:41:22 - DEBUG - [__init__] -   - 最大ポジション数: 5
+2025-05-31 17:41:22 - DEBUG - [__init__] -   - 1取引リスク: 2.0%
+2025-05-31 17:41:22 - DEBUG - [__init__] -   - デフォルト取引量: 10,000通貨
+2025-05-31 17:41:22 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 17:41:23 - DEBUG - [_initialize_system] - 1/3: アカウント情報取得中...
+2025-05-31 17:41:23 - DEBUG - [_get_account_info] - API呼び出し: /port/v1/accounts/me
+2025-05-31 17:41:23 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:24 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/port/v1/accounts/me HTTP/1.1" 200 604
+2025-05-31 17:41:24 - DEBUG - [_get_account_info] - アカウント情報レスポンス: 200
+2025-05-31 17:41:24 - DEBUG - [_get_account_info] - アカウントデータ: {
+  "Data": [
+    {
+      "AccountGroupKey": "PleHukkZT-PG8yRV|OMfTA==",
+      "AccountId": "20696194",
+      "AccountKey": "bm|tHfvNgXsN2VkCv2dcaw==",
+      "AccountSubType": "None",
+      "AccountType": "Normal",
+      "AccountValueProtectionLimit": 0.0,
+      "Active": true,
+      "CanUseCashPositionsAsMarginCollateral": true,
+      "CfdBorrowingCostsActive": false,
+      "ClientId": "20696194",
+      "ClientKey": "bm|tHfvNgXsN2VkCv2dcaw==",
+      "CreationDate": "2025-05-27T03:47:40.587000Z",
+      "Currency": "EUR",
+      "CurrencyDecimals": 2,
+      "DirectMarketAccess": false,
+      "FractionalOrderEnabled": false,
+      "FractionalOrderEnabledAssetTypes": [],
+      "IndividualMargining": true,
+      "IsCurrencyConversionAtSettlementTime": true,
+      "IsMarginTradingAllowed": true,
+      "IsShareable": false,
+      "IsTrialAccount": true,
+      "LegalAssetTypes": [
+        "FxSpot",
+        "FxForwards",
+        "ContractFutures",
+        "Stock",
+        "StockOption",
+        "Bond",
+        "FuturesOption",
+        "StockIndexOption",
+        "Cash",
+        "CfdOnStock",
+        "CfdOnIndex",
+        "StockIndex",
+        "CfdOnEtf",
+        "CfdOnEtc",
+        "CfdOnEtn",
+        "CfdOnFund",
+        "CfdOnRights",
+        "CfdOnCompanyWarrant",
+        "Etf",
+        "Etc",
+        "Etn",
+        "Fund",
+        "FxSwap",
+        "Rights",
+        "IpoOnStock",
+        "CompanyWarrant"
+      ],
+      "ManagementType": "Client",
+      "MarginCalculationMethod": "Default",
+      "MarginLendingEnabled": "None",
+      "PortfolioBasedMarginEnabled": false,
+      "Sharing": [
+        "NoSharing"
+      ],
+      "SupportsAccountValueProtectionLimit": true,
+      "UseCashPositionsAsMarginCollateral": true
+    }
+  ]
+}
+2025-05-31 17:41:24 - INFO - [_get_account_info] - ✅ アカウント取得成功
+2025-05-31 17:41:24 - INFO - [_get_account_info] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 17:41:24 - INFO - [_get_account_info] -   - 基準通貨: EUR
+2025-05-31 17:41:24 - DEBUG - [_initialize_system] - 2/3: 通貨ペアUICマッピング作成中...
+2025-05-31 17:41:24 - INFO - [_create_currency_mapping] - 🔍 通貨ペアUICマッピングを作成中...
+2025-05-31 17:41:24 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: USDJPY
+2025-05-31 17:41:24 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:24 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=USDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 218
+2025-05-31 17:41:24 - DEBUG - [_create_currency_mapping] - USDJPY: API応答 200
+2025-05-31 17:41:24 - DEBUG - [_create_currency_mapping] - USDJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "US Dollar/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41333,
+      "Identifier": 42,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "USDJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:24 - INFO - [_create_currency_mapping] -   ✅ USDJPY: UIC 42 (US Dollar/Japanese Yen)
+2025-05-31 17:41:24 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: EURJPY
+2025-05-31 17:41:24 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:25 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 216
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - EURJPY: API応答 200
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - EURJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Euro/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41303,
+      "Identifier": 18,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "EURJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:25 - INFO - [_create_currency_mapping] -   ✅ EURJPY: UIC 18 (Euro/Japanese Yen)
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: GBPJPY
+2025-05-31 17:41:25 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:25 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 223
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - GBPJPY: API応答 200
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - GBPJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "British Pound/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41311,
+      "Identifier": 26,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "GBPJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:25 - INFO - [_create_currency_mapping] -   ✅ GBPJPY: UIC 26 (British Pound/Japanese Yen)
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: AUDJPY
+2025-05-31 17:41:25 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:25 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 224
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - AUDJPY: API応答 200
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - AUDJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Australian Dollar/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41324,
+      "Identifier": 2,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "AUDJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:25 - INFO - [_create_currency_mapping] -   ✅ AUDJPY: UIC 2 (Australian Dollar/Japanese Yen)
+2025-05-31 17:41:25 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: CHFJPY
+2025-05-31 17:41:25 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:26 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=CHFJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 203
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - CHFJPY: API応答 200
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - CHFJPY: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "JPY",
+      "Description": "Swiss Franc/Japanese Yen",
+      "ExchangeId": "SBFX",
+      "GroupId": 41336,
+      "Identifier": 8,
+      "SummaryType": "Instrument",
+      "Symbol": "CHFJPY",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:26 - INFO - [_create_currency_mapping] -   ✅ CHFJPY: UIC 8 (Swiss Franc/Japanese Yen)
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: EURUSD
+2025-05-31 17:41:26 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:26 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 215
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - EURUSD: API応答 200
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - EURUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "Euro/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41306,
+      "Identifier": 21,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "EURUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:26 - INFO - [_create_currency_mapping] -   ✅ EURUSD: UIC 21 (Euro/US Dollar)
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: GBPUSD
+2025-05-31 17:41:26 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:26 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 220
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - GBPUSD: API応答 200
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - GBPUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "British Pound/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41316,
+      "Identifier": 31,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "GBPUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:26 - INFO - [_create_currency_mapping] -   ✅ GBPUSD: UIC 31 (British Pound/US Dollar)
+2025-05-31 17:41:26 - DEBUG - [_create_currency_mapping] - 通貨ペア検索開始: AUDUSD
+2025-05-31 17:41:26 - DEBUG - [_new_conn] - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 17:41:27 - DEBUG - [_make_request] - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 218
+2025-05-31 17:41:27 - DEBUG - [_create_currency_mapping] - AUDUSD: API応答 200
+2025-05-31 17:41:27 - DEBUG - [_create_currency_mapping] - AUDUSD: データ {
+  "Data": [
+    {
+      "AssetType": "FxSpot",
+      "CurrencyCode": "USD",
+      "Description": "Australian Dollar/US Dollar",
+      "ExchangeId": "SBFX",
+      "GroupId": 41328,
+      "Identifier": 4,
+      "IsKeywordMatch": true,
+      "SummaryType": "Instrument",
+      "Symbol": "AUDUSD",
+      "TradableAs": [
+        "FxSpot",
+        "FxForwards",
+        "FxSwap"
+      ]
+    }
+  ]
+}
+2025-05-31 17:41:27 - INFO - [_create_currency_mapping] -   ✅ AUDUSD: UIC 4 (Australian Dollar/US Dollar)
+2025-05-31 17:41:27 - INFO - [_create_currency_mapping] - ✅ UICマッピング作成完了: 8/8通貨ペア
+2025-05-31 17:41:27 - DEBUG - [_initialize_system] - 3/3: エントリーポイント読み込み中...
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] - エントリーポイントディレクトリ: C:\Users\beru\Dropbox\006_TRADE\historycal\entrypoint_fx
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] - 発見されたファイル: ['entrypoints_20250430.csv', 'entrypoints_20250501.csv', 'entrypoints_20250502.csv', 'entrypoints_20250505.csv', 'entrypoints_20250506.csv', 'entrypoints_20250507.csv', 'entrypoints_20250508.csv', 'entrypoints_20250509.csv', 'entrypoints_20250512.csv', 'entrypoints_20250513.csv', 'entrypoints_20250514.csv', 'entrypoints_20250515.csv', 'entrypoints_20250516.csv', 'entrypoints_20250519.csv', 'entrypoints_20250520.csv', 'entrypoints_20250521.csv', 'entrypoints_20250522.csv', 'entrypoints_20250523.csv', 'entrypoints_20250526.csv', 'entrypoints_20250527.csv', 'entrypoints_20250528.csv', 'entrypoints_20250529.csv', 'entrypoints_20250530.csv']
+2025-05-31 17:41:27 - INFO - [_load_entry_points] - 📁 使用ファイル: entrypoints_20250530.csv
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] - ファイルパス: C:\Users\beru\Dropbox\006_TRADE\historycal\entrypoint_fx\entrypoints_20250530.csv
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] - ファイルサイズ: 658 bytes
+2025-05-31 17:41:27 - INFO - [_load_entry_points] - ✅ エントリーポイント読み込み完了: 9件
+2025-05-31 17:41:27 - INFO - [_load_entry_points] - 📊 通貨ペア別内訳:
+2025-05-31 17:41:27 - INFO - [_load_entry_points] -   - USDJPY: 6件
+2025-05-31 17:41:27 - INFO - [_load_entry_points] -   - CHFJPY: 2件
+2025-05-31 17:41:27 - INFO - [_load_entry_points] -   - EURJPY: 1件
+2025-05-31 17:41:27 - INFO - [_load_entry_points] - 📊 方向別内訳:
+2025-05-31 17:41:27 - INFO - [_load_entry_points] -   - Long: 5件
+2025-05-31 17:41:27 - INFO - [_load_entry_points] -   - Short: 4件
+2025-05-31 17:41:27 - INFO - [_load_entry_points] - ⏰ 時間範囲: 08:48:00 - 18:51:00
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] - エントリーポイントサンプル（最初の3件）:
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] -   1: 08:48:00 USDJPY Long (スコア: 7.19)
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] -   2: 08:59:00 USDJPY Short (スコア: 7.64)
+2025-05-31 17:41:27 - DEBUG - [_load_entry_points] -   3: 09:34:00 EURJPY Short (スコア: 7.06)
+2025-05-31 17:41:27 - INFO - [_initialize_system] - ✅ システム初期化完了
+2025-05-31 17:41:27 - INFO - [_initialize_system] - 📊 システム状態:
+2025-05-31 17:41:27 - INFO - [_initialize_system] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 17:41:27 - INFO - [_initialize_system] -   - 対応通貨ペア数: 8
+2025-05-31 17:41:27 - INFO - [_initialize_system] -   - エントリーポイント数: 9
+2025-05-31 17:41:27 - INFO - [start_monitoring] - 🚀 FX自動エントリーシステム監視開始
+2025-05-31 17:41:27 - INFO - [start_monitoring] - 📁 エントリーポイント数: 9
+2025-05-31 17:41:27 - INFO - [start_monitoring] - 🔧 対応通貨ペア: ['USDJPY', 'EURJPY', 'GBPJPY', 'AUDJPY', 'CHFJPY', 'EURUSD', 'GBPUSD', 'AUDUSD']
+2025-05-31 17:41:27 - INFO - [start_monitoring] - ⏰ 毎分00秒にエントリー・エグジットチェックを実行
+2025-05-31 17:41:27 - INFO - [start_monitoring] - 📂 ログ保存先: C:\Users\beru\Dropbox\006_TRADE\historycal\bot_saxo\log
+2025-05-31 17:41:27 - DEBUG - [start_monitoring] - システム状態詳細:
+2025-05-31 17:41:27 - DEBUG - [start_monitoring] -   - ベースURL: https://gateway.saxobank.com/sim/openapi
+2025-05-31 17:41:27 - DEBUG - [start_monitoring] -   - アカウントキー: bm|tHfvNgXsN2VkCv2dcaw==
+2025-05-31 17:41:27 - DEBUG - [start_monitoring] -   - 最大ポジション数: 5
+2025-05-31 17:41:27 - DEBUG - [start_monitoring] -   - リスク/取引: 2.0%
+2025-05-31 17:41:27 - INFO - [start_monitoring] - 🔄 初回チェック実行...
+2025-05-31 17:41:27 - DEBUG - [run_single_check] - ============================================================
+2025-05-31 17:41:27 - DEBUG - [run_single_check] - 🔄 定期チェック実行開始
+2025-05-31 17:41:27 - DEBUG - [run_single_check] - 1/3: エントリー条件チェック...
+2025-05-31 17:41:27 - DEBUG - [check_entry_conditions] - エントリー条件チェック: 実際時刻=17:41:27, チェック対象=17:41:00
+2025-05-31 17:41:27 - DEBUG - [_show_next_entry_info] - 📅 次のエントリー: 17:47:00 (CHFJPY Long) - あと0:06:00
+2025-05-31 17:41:27 - DEBUG - [run_single_check] - 2/3: エグジット条件チェック...
+2025-05-31 17:41:27 - DEBUG - [run_single_check] - 3/3: ポジション監視...
+2025-05-31 17:41:27 - DEBUG - [monitor_positions] - 📊 アクティブポジション: なし
+2025-05-31 17:41:27 - DEBUG - [run_single_check] - 🔄 定期チェック完了
+2025-05-31 17:41:27 - DEBUG - [wait_for_next_minute] - ⏰ 次のチェックまで待機: 32.7秒 (次回実行: 17:42:00)
+2025-05-31 17:41:37 - INFO - [start_monitoring] - 👋 システム停止（Ctrl+C）
+2025-05-31 17:41:37 - INFO - [start_monitoring] - 🏁 システム終了
+2025-05-31 17:41:37 - INFO - [_log_session_stats] - 📊 セッション統計:
+2025-05-31 17:41:37 - INFO - [_log_session_stats] -   - 開始時刻: 17:41:22
+2025-05-31 17:41:37 - INFO - [_log_session_stats] -   - 稼働時間: 0:00:14.403664
+2025-05-31 17:41:37 - INFO - [_log_session_stats] -   - 総エントリー数: 0
+2025-05-31 17:41:37 - INFO - [_log_session_stats] -   - 総エグジット数: 0
+2025-05-31 17:41:37 - INFO - [_log_session_stats] -   - 累計pips: 0.0
+2025-05-31 17:41:37 - INFO - [_log_session_stats] -   - アクティブポジション: 0

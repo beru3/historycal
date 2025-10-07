@@ -1,0 +1,121 @@
+2025-05-31 11:21:42 - INFO - [main] - 🎬 FX自動エントリーシステム開始 (OAuth対応版)
+2025-05-31 11:21:42 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\log
+2025-05-31 11:21:42 - INFO - [__init__] - ================================================================================
+2025-05-31 11:21:42 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動 (OAuth対応版)
+2025-05-31 11:21:42 - INFO - [__init__] - ================================================================================
+2025-05-31 11:21:42 - INFO - [__init__] - OAuth管理初期化完了 (環境: sim)
+2025-05-31 11:21:42 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 11:21:42 - INFO - [_authenticate] - 🔐 OAuth認証開始
+2025-05-31 11:21:42 - INFO - [_authenticate] - ✅ 有効な既存トークンを使用
+2025-05-31 11:21:42 - INFO - [start_auto_refresh] - 🔄 自動トークン更新開始
+2025-05-31 11:21:43 - INFO - [_get_account_info] - ✅ アカウント取得成功
+2025-05-31 11:21:43 - INFO - [_get_account_info] -   - アカウントキー: MgxZftswuWHtmwaGlgw3lg==
+2025-05-31 11:21:43 - INFO - [_get_account_info] -   - 基準通貨: JPY
+2025-05-31 11:21:43 - INFO - [_create_currency_mapping] - 🔍 通貨ペアUICマッピングを作成中...
+2025-05-31 11:21:43 - INFO - [_create_currency_mapping] -   ✅ USDJPY: UIC 42 (米ドル/円)
+2025-05-31 11:21:44 - INFO - [_create_currency_mapping] -   ✅ EURJPY: UIC 18 (ユーロ/円)
+2025-05-31 11:21:46 - INFO - [_create_currency_mapping] -   ✅ GBPJPY: UIC 26 (英ポンド/円)
+2025-05-31 11:21:47 - INFO - [_create_currency_mapping] -   ✅ AUDJPY: UIC 2 (豪ドル/円)
+2025-05-31 11:21:47 - INFO - [_create_currency_mapping] -   ✅ CHFJPY: UIC 8 (スイスフラン/円)
+2025-05-31 11:21:48 - INFO - [_create_currency_mapping] -   ✅ EURUSD: UIC 21 (ユーロ/米ドル)
+2025-05-31 11:21:49 - INFO - [_create_currency_mapping] -   ✅ GBPUSD: UIC 31 (英ポンド/米ドル)
+2025-05-31 11:21:50 - INFO - [_create_currency_mapping] -   ✅ AUDUSD: UIC 4 (豪ドル/米ドル)
+2025-05-31 11:21:51 - INFO - [_create_currency_mapping] -   ✅ NZDUSD: UIC 37 (ニュージーランドドル/米ドル)
+2025-05-31 11:21:52 - INFO - [_create_currency_mapping] -   ✅ USDCAD: UIC 38 (米ドル/カナダドル)
+2025-05-31 11:21:52 - INFO - [_create_currency_mapping] - ✅ UICマッピング作成完了: 10/10通貨ペア
+2025-05-31 11:21:52 - INFO - [_load_entry_points] - 📁 使用ファイル: entrypoints_20250530.csv
+2025-05-31 11:21:52 - INFO - [_load_entry_points] - ✅ エントリーポイント読み込み完了: 9件
+2025-05-31 11:21:52 - INFO - [_load_entry_points] - 📊 通貨ペア別内訳:
+2025-05-31 11:21:52 - INFO - [_load_entry_points] -   - USDJPY: 6件
+2025-05-31 11:21:52 - INFO - [_load_entry_points] -   - CHFJPY: 2件
+2025-05-31 11:21:52 - INFO - [_load_entry_points] -   - EURJPY: 1件
+2025-05-31 11:21:52 - INFO - [_load_entry_points] - 📊 方向別内訳:
+2025-05-31 11:21:52 - INFO - [_load_entry_points] -   - Long: 5件
+2025-05-31 11:21:52 - INFO - [_load_entry_points] -   - Short: 4件
+2025-05-31 11:21:52 - INFO - [_load_entry_points] - ⏰ 時間範囲: 08:48:00 - 18:51:00
+2025-05-31 11:21:52 - INFO - [_initialize_system] - ✅ システム初期化完了
+2025-05-31 11:21:52 - INFO - [_initialize_system] - 📊 システム状態:
+2025-05-31 11:21:52 - INFO - [_initialize_system] -   - アカウントキー: MgxZftswuWHtmwaGlgw3lg==
+2025-05-31 11:21:52 - INFO - [_initialize_system] -   - 対応通貨ペア数: 10
+2025-05-31 11:21:52 - INFO - [_initialize_system] -   - エントリーポイント数: 9
+2025-05-31 11:21:52 - INFO - [start_monitoring] - 🚀 FX自動エントリーシステム監視開始 (OAuth対応)
+2025-05-31 11:21:52 - INFO - [start_monitoring] - 📁 エントリーポイント数: 9
+2025-05-31 11:21:52 - INFO - [start_monitoring] - 🔧 対応通貨ペア: ['USDJPY', 'EURJPY', 'GBPJPY', 'AUDJPY', 'CHFJPY', 'EURUSD', 'GBPUSD', 'AUDUSD', 'NZDUSD', 'USDCAD']
+2025-05-31 11:21:52 - INFO - [start_monitoring] - ⏰ 毎分00秒にエントリー・エグジットチェックを実行
+2025-05-31 11:21:52 - INFO - [start_monitoring] - 📂 ログ保存先: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\log
+2025-05-31 11:21:52 - INFO - [start_monitoring] - 🔐 OAuth自動更新: 有効
+2025-05-31 11:21:52 - INFO - [start_monitoring] - 🔄 初回チェック実行...
+2025-05-31 11:22:23 - INFO - [start_monitoring] - 👋 システム停止（Ctrl+C）
+2025-05-31 12:02:09 - INFO - [main] - 🎬 FX自動エントリーシステム開始 (OAuth対応版)
+2025-05-31 12:02:09 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\log
+2025-05-31 12:02:09 - INFO - [__init__] - ================================================================================
+2025-05-31 12:02:09 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動 (OAuth対応版)
+2025-05-31 12:02:09 - INFO - [__init__] - ================================================================================
+2025-05-31 12:02:09 - INFO - [__init__] - OAuth管理初期化完了 (環境: sim)
+2025-05-31 12:02:09 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 12:02:09 - INFO - [_authenticate] - 🔐 OAuth認証開始
+2025-05-31 12:02:09 - INFO - [_authenticate] - ✅ 有効な既存トークンを使用
+2025-05-31 12:02:09 - INFO - [start_auto_refresh] - 🔄 自動トークン更新開始
+2025-05-31 12:02:09 - INFO - [_get_account_info] - ✅ アカウント取得成功
+2025-05-31 12:02:09 - INFO - [_get_account_info] -   - アカウントキー: MgxZftswuWHtmwaGlgw3lg==
+2025-05-31 12:02:09 - INFO - [_get_account_info] -   - 基準通貨: JPY
+2025-05-31 12:02:09 - INFO - [_create_currency_mapping] - 🔍 通貨ペアUICマッピングを作成中...
+2025-05-31 12:02:10 - INFO - [_create_currency_mapping] -   ✅ USDJPY: UIC 42 (米ドル/円)
+2025-05-31 12:02:11 - INFO - [_create_currency_mapping] -   ✅ EURJPY: UIC 18 (ユーロ/円)
+2025-05-31 12:02:11 - INFO - [_create_currency_mapping] -   ✅ GBPJPY: UIC 26 (英ポンド/円)
+2025-05-31 12:02:12 - INFO - [_create_currency_mapping] -   ✅ AUDJPY: UIC 2 (豪ドル/円)
+2025-05-31 12:02:13 - INFO - [_create_currency_mapping] -   ✅ CHFJPY: UIC 8 (スイスフラン/円)
+2025-05-31 12:02:14 - INFO - [_create_currency_mapping] -   ✅ EURUSD: UIC 21 (ユーロ/米ドル)
+2025-05-31 12:02:15 - INFO - [_create_currency_mapping] -   ✅ GBPUSD: UIC 31 (英ポンド/米ドル)
+2025-05-31 12:02:16 - INFO - [_create_currency_mapping] -   ✅ AUDUSD: UIC 4 (豪ドル/米ドル)
+2025-05-31 12:02:17 - INFO - [_create_currency_mapping] -   ✅ NZDUSD: UIC 37 (ニュージーランドドル/米ドル)
+2025-05-31 12:02:18 - INFO - [_create_currency_mapping] -   ✅ USDCAD: UIC 38 (米ドル/カナダドル)
+2025-05-31 12:02:19 - INFO - [_create_currency_mapping] - ✅ UICマッピング作成完了: 10/10通貨ペア
+2025-05-31 12:02:19 - INFO - [_load_entry_points] - 📁 使用ファイル: entrypoints_20250530.csv
+2025-05-31 12:02:19 - INFO - [_load_entry_points] - ✅ エントリーポイント読み込み完了: 9件
+2025-05-31 12:02:19 - INFO - [_load_entry_points] - 📊 通貨ペア別内訳:
+2025-05-31 12:02:19 - INFO - [_load_entry_points] -   - USDJPY: 6件
+2025-05-31 12:02:19 - INFO - [_load_entry_points] -   - CHFJPY: 2件
+2025-05-31 12:02:19 - INFO - [_load_entry_points] -   - EURJPY: 1件
+2025-05-31 12:02:19 - INFO - [_load_entry_points] - 📊 方向別内訳:
+2025-05-31 12:02:19 - INFO - [_load_entry_points] -   - Long: 5件
+2025-05-31 12:02:19 - INFO - [_load_entry_points] -   - Short: 4件
+2025-05-31 12:02:19 - INFO - [_load_entry_points] - ⏰ 時間範囲: 08:48:00 - 18:51:00
+2025-05-31 12:02:19 - INFO - [_initialize_system] - ✅ システム初期化完了
+2025-05-31 12:02:19 - INFO - [_initialize_system] - 📊 システム状態:
+2025-05-31 12:02:19 - INFO - [_initialize_system] -   - アカウントキー: MgxZftswuWHtmwaGlgw3lg==
+2025-05-31 12:02:19 - INFO - [_initialize_system] -   - 対応通貨ペア数: 10
+2025-05-31 12:02:19 - INFO - [_initialize_system] -   - エントリーポイント数: 9
+2025-05-31 12:02:19 - INFO - [start_monitoring] - 🚀 FX自動エントリーシステム監視開始 (OAuth対応)
+2025-05-31 12:02:19 - INFO - [start_monitoring] - 📁 エントリーポイント数: 9
+2025-05-31 12:02:19 - INFO - [start_monitoring] - 🔧 対応通貨ペア: ['USDJPY', 'EURJPY', 'GBPJPY', 'AUDJPY', 'CHFJPY', 'EURUSD', 'GBPUSD', 'AUDUSD', 'NZDUSD', 'USDCAD']
+2025-05-31 12:02:19 - INFO - [start_monitoring] - ⏰ 毎分00秒にエントリー・エグジットチェックを実行
+2025-05-31 12:02:19 - INFO - [start_monitoring] - 📂 ログ保存先: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\log
+2025-05-31 12:02:19 - INFO - [start_monitoring] - 🔐 OAuth自動更新: 有効
+2025-05-31 12:02:19 - INFO - [start_monitoring] - 🔄 初回チェック実行...
+2025-05-31 12:02:30 - INFO - [start_monitoring] - 👋 システム停止（Ctrl+C）
+2025-05-31 12:02:35 - INFO - [stop_auto_refresh] - 🛑 自動トークン更新停止
+2025-05-31 12:02:35 - INFO - [start_monitoring] - 🏁 システム終了
+2025-05-31 12:02:35 - INFO - [_log_session_stats] - 📊 セッション統計:
+2025-05-31 12:02:35 - INFO - [_log_session_stats] -   - 開始時刻: 12:02:09
+2025-05-31 12:02:35 - INFO - [_log_session_stats] -   - 稼働時間: 0:00:25.984844
+2025-05-31 12:02:35 - INFO - [_log_session_stats] -   - 総エントリー数: 0
+2025-05-31 12:02:35 - INFO - [_log_session_stats] -   - 総エグジット数: 0
+2025-05-31 12:02:35 - INFO - [_log_session_stats] -   - 累計pips: 0.0
+2025-05-31 12:02:35 - INFO - [_log_session_stats] -   - アクティブポジション: 0
+2025-05-31 14:36:36 - INFO - [main] - 🎬 FX自動エントリーシステム開始 (OAuth対応版)
+2025-05-31 14:36:36 - INFO - [main] - 📁 ログディレクトリ: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\log
+2025-05-31 14:36:36 - INFO - [__init__] - ================================================================================
+2025-05-31 14:36:36 - INFO - [__init__] - 🚀 FX自動エントリーシステム起動 (OAuth対応版)
+2025-05-31 14:36:36 - INFO - [__init__] - ================================================================================
+2025-05-31 14:36:36 - INFO - [__init__] - OAuth管理初期化完了 (環境: sim)
+2025-05-31 14:36:36 - INFO - [_initialize_system] - 📋 システム初期化を開始します...
+2025-05-31 14:36:36 - INFO - [_authenticate] - 🔐 OAuth認証開始
+2025-05-31 14:36:36 - INFO - [authenticate_interactive] - 🔐 OAuth認証開始
+2025-05-31 14:36:36 - INFO - [authenticate_interactive] - 🌐 コールバックサーバーを起動中...
+2025-05-31 14:36:36 - INFO - [run_server] - 🌐 コールバックサーバー起動: http://localhost:8080
+2025-05-31 14:36:36 - INFO - [get_authorization_url] - 認証URL生成完了
+2025-05-31 14:36:36 - INFO - [authenticate_interactive] - 🌐 ブラウザで認証ページを開きます...
+2025-05-31 14:36:36 - INFO - [authenticate_interactive] - 認証URL: https://sim.logonvalidation.net/authorize?response_type=code&client_id=5f19317941744e688ca30be6b2f53659&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&scope=openapi&state=Df91_w2lV_Ea858Pv9oU9AH0reAleJRk7PIOUtFCBiA&code_challenge=CUv2yFokA8m9tYGpUhJ99rwAMzM6lEjIM_QcLmha0d8&code_challenge_method=S256
+2025-05-31 14:36:36 - INFO - [authenticate_interactive] - ⏳ 認証完了を待機中...
+2025-05-31 14:36:36 - INFO - [authenticate_interactive] - ブラウザでサクソバンクにログインしてください...

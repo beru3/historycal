@@ -1,0 +1,14 @@
+{
+  "access_token": "eyJhbGciOiJFUzI1NiIsIng1dCI6IjczMEZDMUQwMUQ0MzM5Q0JGRTU3MTc0Q0NGREQ0RjExRDZENzgwNDYifQ.eyJvYWEiOiI3Nzc3MCIsImlzcyI6Im9hIiwiYWlkIjoiMTc3MyIsInVpZCI6Ing5QVRXMDAzQUwzbDF6Z0FQOFBqYnc9PSIsImNpZCI6Ing5QVRXMDAzQUwzbDF6Z0FQOFBqYnc9PSIsImlzYSI6IkZhbHNlIiwidGlkIjoiMzc1NCIsInNpZCI6ImUzYTc4ZTExNDBlYzRiZDlhZGE5YmI2YWZjYWNlNGNhIiwiZGdpIjoiODQiLCJleHAiOiIxNzQ4NjExMTkyIiwib2FsIjoiMkYiLCJpaWQiOiJiNzZhMWExOTczNDk0MjEzMjJlMDA4ZGQ3OWFmZDNmMSJ9.n_Y1qSn-OYkSqc2qjyvJrgNw3ad7AYAcqyGGtGL3WZmn1eooDrarAbEV9RCa-Lnlg3PYwTSmK3y3KGau_867pQ",
+  "token_type": "Bearer",
+  "expires_in": 1199,
+  "refresh_token": "c122ec87-b79a-4d53-9f36-3c9249670116",
+  "refresh_token_expires_in": 3599,
+  "base_uri": null,
+  "expires_at": 1748611191.4931793,
+  "refresh_token_created_at": 1748609992.4931793,
+  "expires_at_human": "2025-05-30 22:19:51",
+  "refresh_token_created_at_human": "2025-05-30",
+  "refresh_token_expires_at_human": "2025-08-28",
+  "refresh_token_days_left": 90
+}

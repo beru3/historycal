@@ -1,0 +1,942 @@
+2025-05-31 11:58:23,364 - INFO - 🚀 FXレート収集システム開始
+2025-05-31 11:58:23,364 - DEBUG - トークンファイルパス: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\saxo_tokens.json
+2025-05-31 11:58:23,365 - INFO - OAuth管理初期化完了 (環境: sim)
+2025-05-31 11:58:23,375 - INFO - 📋 システム初期化を開始します...
+2025-05-31 11:58:23,375 - DEBUG - 1/4: OAuth認証中...
+2025-05-31 11:58:23,376 - INFO - 🔐 OAuth認証開始
+2025-05-31 11:58:23,376 - DEBUG - トークン読み込み完了: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\saxo_tokens.json
+2025-05-31 11:58:23,378 - INFO - ✅ 有効な既存トークンを使用
+2025-05-31 11:58:23,380 - INFO - 🔄 自動トークン更新開始
+2025-05-31 11:58:23,380 - DEBUG - 2/4: 通貨ペアUICマッピング作成中...
+2025-05-31 11:58:23,381 - INFO - 🔍 通貨ペアUICマッピングを作成中...
+2025-05-31 11:58:23,381 - DEBUG - 通貨ペア検索開始: USDJPY
+2025-05-31 11:58:23,385 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:23,781 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=USDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 231
+2025-05-31 11:58:23,785 - DEBUG - USDJPY: API応答 200
+2025-05-31 11:58:23,785 - INFO -   ✅ USDJPY: UIC 42 (米ドル/円)
+2025-05-31 11:58:24,289 - DEBUG - 通貨ペア検索開始: EURJPY
+2025-05-31 11:58:24,291 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:24,624 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 232
+2025-05-31 11:58:24,628 - DEBUG - EURJPY: API応答 200
+2025-05-31 11:58:24,629 - INFO -   ✅ EURJPY: UIC 18 (ユーロ/円)
+2025-05-31 11:58:25,144 - DEBUG - 通貨ペア検索開始: GBPJPY
+2025-05-31 11:58:25,147 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:25,489 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 236
+2025-05-31 11:58:25,493 - DEBUG - GBPJPY: API応答 200
+2025-05-31 11:58:25,493 - INFO -   ✅ GBPJPY: UIC 26 (英ポンド/円)
+2025-05-31 11:58:26,001 - DEBUG - 通貨ペア検索開始: AUDJPY
+2025-05-31 11:58:26,003 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:26,342 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 231
+2025-05-31 11:58:26,345 - DEBUG - AUDJPY: API応答 200
+2025-05-31 11:58:26,345 - INFO -   ✅ AUDJPY: UIC 2 (豪ドル/円)
+2025-05-31 11:58:26,858 - DEBUG - 通貨ペア検索開始: CHFJPY
+2025-05-31 11:58:26,861 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:27,211 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=CHFJPY&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 225
+2025-05-31 11:58:27,216 - DEBUG - CHFJPY: API応答 200
+2025-05-31 11:58:27,216 - INFO -   ✅ CHFJPY: UIC 8 (スイスフラン/円)
+2025-05-31 11:58:27,733 - DEBUG - 通貨ペア検索開始: EURUSD
+2025-05-31 11:58:27,737 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:28,088 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=EURUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 238
+2025-05-31 11:58:28,090 - DEBUG - EURUSD: API応答 200
+2025-05-31 11:58:28,091 - INFO -   ✅ EURUSD: UIC 21 (ユーロ/米ドル)
+2025-05-31 11:58:28,605 - DEBUG - 通貨ペア検索開始: GBPUSD
+2025-05-31 11:58:28,607 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:28,945 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=GBPUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 240
+2025-05-31 11:58:28,948 - DEBUG - GBPUSD: API応答 200
+2025-05-31 11:58:28,948 - INFO -   ✅ GBPUSD: UIC 31 (英ポンド/米ドル)
+2025-05-31 11:58:29,460 - DEBUG - 通貨ペア検索開始: AUDUSD
+2025-05-31 11:58:29,465 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:29,804 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=AUDUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 232
+2025-05-31 11:58:29,809 - DEBUG - AUDUSD: API応答 200
+2025-05-31 11:58:29,809 - INFO -   ✅ AUDUSD: UIC 4 (豪ドル/米ドル)
+2025-05-31 11:58:30,313 - DEBUG - 通貨ペア検索開始: NZDUSD
+2025-05-31 11:58:30,316 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:30,661 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=NZDUSD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 253
+2025-05-31 11:58:30,664 - DEBUG - NZDUSD: API応答 200
+2025-05-31 11:58:30,664 - INFO -   ✅ NZDUSD: UIC 37 (ニュージーランドドル/米ドル)
+2025-05-31 11:58:31,170 - DEBUG - 通貨ペア検索開始: USDCAD
+2025-05-31 11:58:31,173 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:31,546 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/ref/v1/instruments?Keywords=USDCAD&AssetTypes=FxSpot&limit=1 HTTP/1.1" 200 238
+2025-05-31 11:58:31,549 - DEBUG - USDCAD: API応答 200
+2025-05-31 11:58:31,549 - INFO -   ✅ USDCAD: UIC 38 (米ドル/カナダドル)
+2025-05-31 11:58:32,057 - INFO - ✅ UICマッピング作成完了: 10/10通貨ペア
+2025-05-31 11:58:32,057 - DEBUG - 3/4: ファイル存在確認中...
+2025-05-31 11:58:32,058 - INFO - ✅ システム初期化完了
+2025-05-31 11:58:32,059 - INFO - ================================================================================
+2025-05-31 11:58:32,059 - INFO - 🎬 FXレート収集開始（要件対応版）
+2025-05-31 11:58:32,061 - INFO - ================================================================================
+2025-05-31 11:58:32,061 - INFO - 📂 Step 1: ファイル読み込み
+2025-05-31 11:58:32,065 - INFO - 📁 最新エントリーポイントファイル: entrypoints_20250530.csv
+2025-05-31 11:58:32,079 - INFO - ✅ エントリーポイント読み込み完了: 9件
+2025-05-31 11:58:32,079 - INFO - 📊 通貨ペア別内訳:
+2025-05-31 11:58:32,080 - INFO -   - USDJPY: 6件
+2025-05-31 11:58:32,081 - INFO -   - CHFJPY: 2件
+2025-05-31 11:58:32,081 - INFO -   - EURJPY: 1件
+2025-05-31 11:58:32,082 - INFO - 📁 最新検証ファイル: アノマリーFX 検証ポイント2025年05月25日 - エントリーポイント.csv
+2025-05-31 11:58:32,107 - DEBUG - 検証ファイル総行数: 216
+2025-05-31 11:58:32,107 - DEBUG - 行2: セクション発見 '利益効率（Hatch検証）日中版'
+2025-05-31 11:58:32,109 - DEBUG - 行15: 時刻順セクション開始 '利益効率（Hatch検証）日中版'
+2025-05-31 11:58:32,109 - DEBUG - 行16: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-31 11:58:32,109 - DEBUG - 行17: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:43:00', 'exit_time': '11:54:00', 'direction': 'Long'}
+2025-05-31 11:58:32,109 - DEBUG - 行18: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,110 - DEBUG - 行19: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-31 11:58:32,110 - DEBUG - 行20: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-31 11:58:32,110 - DEBUG - 行21: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,110 - DEBUG - 行22: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-31 11:58:32,110 - DEBUG - 行23: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-31 11:58:32,110 - DEBUG - 行24: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,111 - DEBUG - 行25: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:54:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,111 - DEBUG - 行26: セクション終了
+2025-05-31 11:58:32,111 - DEBUG - 行29: セクション発見 '利益効率（Hatch検証）'
+2025-05-31 11:58:32,111 - DEBUG - 行42: 時刻順セクション開始 '利益効率（Hatch検証）'
+2025-05-31 11:58:32,111 - DEBUG - 行43: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-31 11:58:32,112 - DEBUG - 行44: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,112 - DEBUG - 行45: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-31 11:58:32,112 - DEBUG - 行46: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-31 11:58:32,112 - DEBUG - 行47: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-31 11:58:32,112 - DEBUG - 行48: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-31 11:58:32,112 - DEBUG - 行49: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,114 - DEBUG - 行50: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:54:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,114 - DEBUG - 行51: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '21:08:00', 'exit_time': '21:11:00', 'direction': 'Short'}
+2025-05-31 11:58:32,114 - DEBUG - 行52: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:42:00', 'exit_time': '21:57:00', 'direction': 'Long'}
+2025-05-31 11:58:32,114 - DEBUG - 行53: セクション終了
+2025-05-31 11:58:32,115 - DEBUG - 行56: セクション発見 '勝率重視（ぶりんださん検証） 日中版'
+2025-05-31 11:58:32,115 - DEBUG - 行69: 時刻順セクション開始 '勝率重視（ぶりんださん検証） 日中版'
+2025-05-31 11:58:32,115 - DEBUG - 行70: データ追加 {'currency_pair': 'AUDUSD', 'entry_time': '10:05:00', 'exit_time': '10:19:00', 'direction': 'Long'}
+2025-05-31 11:58:32,116 - DEBUG - 行71: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '10:56:00', 'direction': 'Short'}
+2025-05-31 11:58:32,116 - DEBUG - 行72: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '10:59:00', 'exit_time': '11:10:00', 'direction': 'Long'}
+2025-05-31 11:58:32,116 - DEBUG - 行73: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,117 - DEBUG - 行74: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-31 11:58:32,117 - DEBUG - 行75: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-31 11:58:32,117 - DEBUG - 行76: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:13:00', 'direction': 'Short'}
+2025-05-31 11:58:32,118 - DEBUG - 行77: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,118 - DEBUG - 行78: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:31:00', 'direction': 'Long'}
+2025-05-31 11:58:32,118 - DEBUG - 行79: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,119 - DEBUG - 行80: セクション終了
+2025-05-31 11:58:32,119 - DEBUG - 行83: セクション発見 '勝率重視（ぶりんださん検証）'
+2025-05-31 11:58:32,120 - DEBUG - 行96: 時刻順セクション開始 '勝率重視（ぶりんださん検証）'
+2025-05-31 11:58:32,120 - DEBUG - 行97: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '10:59:00', 'exit_time': '11:10:00', 'direction': 'Long'}
+2025-05-31 11:58:32,120 - DEBUG - 行98: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,122 - DEBUG - 行99: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-31 11:58:32,122 - DEBUG - 行100: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:13:00', 'direction': 'Short'}
+2025-05-31 11:58:32,122 - DEBUG - 行101: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,123 - DEBUG - 行102: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:31:00', 'direction': 'Long'}
+2025-05-31 11:58:32,123 - DEBUG - 行103: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,123 - DEBUG - 行104: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '20:08:00', 'exit_time': '20:19:00', 'direction': 'Short'}
+2025-05-31 11:58:32,124 - DEBUG - 行105: データ追加 {'currency_pair': 'EURUSD', 'entry_time': '21:08:00', 'exit_time': '21:11:00', 'direction': 'Short'}
+2025-05-31 11:58:32,124 - DEBUG - 行106: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:46:00', 'exit_time': '21:59:00', 'direction': 'Long'}
+2025-05-31 11:58:32,125 - DEBUG - 行107: セクション終了
+2025-05-31 11:58:32,125 - DEBUG - 行110: セクション発見 '時間効率重視 日中版'
+2025-05-31 11:58:32,125 - DEBUG - 行123: 時刻順セクション開始 '時間効率重視 日中版'
+2025-05-31 11:58:32,126 - DEBUG - 行124: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:03:00', 'exit_time': '10:12:00', 'direction': 'Short'}
+2025-05-31 11:58:32,126 - DEBUG - 行125: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:00:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-31 11:58:32,126 - DEBUG - 行126: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '12:01:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,127 - DEBUG - 行127: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-31 11:58:32,127 - DEBUG - 行128: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-31 11:58:32,127 - DEBUG - 行129: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-31 11:58:32,127 - DEBUG - 行130: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:51:00', 'exit_time': '16:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,129 - DEBUG - 行131: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-31 11:58:32,129 - DEBUG - 行132: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '17:55:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,129 - DEBUG - 行133: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:53:00', 'exit_time': '18:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,130 - DEBUG - 行134: セクション終了
+2025-05-31 11:58:32,130 - DEBUG - 行137: セクション発見 '時間効率重視 終日版'
+2025-05-31 11:58:32,130 - DEBUG - 行150: 時刻順セクション開始 '時間効率重視 終日版'
+2025-05-31 11:58:32,131 - DEBUG - 行151: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:00:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-31 11:58:32,131 - DEBUG - 行152: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '12:01:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,131 - DEBUG - 行153: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:55:00', 'exit_time': '14:58:00', 'direction': 'Short'}
+2025-05-31 11:58:32,132 - DEBUG - 行154: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '15:13:00', 'exit_time': '15:16:00', 'direction': 'Long'}
+2025-05-31 11:58:32,132 - DEBUG - 行155: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:09:00', 'direction': 'Short'}
+2025-05-31 11:58:32,132 - DEBUG - 行156: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-31 11:58:32,132 - DEBUG - 行157: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '17:55:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,133 - DEBUG - 行158: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:53:00', 'exit_time': '18:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,133 - DEBUG - 行159: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '19:02:00', 'exit_time': '19:06:00', 'direction': 'Short'}
+2025-05-31 11:58:32,133 - DEBUG - 行160: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:43:00', 'exit_time': '21:56:00', 'direction': 'Long'}
+2025-05-31 11:58:32,133 - DEBUG - 行161: セクション終了
+2025-05-31 11:58:32,134 - DEBUG - 行164: セクション発見 '最大利益 日中版'
+2025-05-31 11:58:32,134 - DEBUG - 行177: 時刻順セクション開始 '最大利益 日中版'
+2025-05-31 11:58:32,134 - DEBUG - 行178: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '10:00:00', 'exit_time': '10:13:00', 'direction': 'Short'}
+2025-05-31 11:58:32,135 - DEBUG - 行179: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-31 11:58:32,135 - DEBUG - 行180: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,135 - DEBUG - 行181: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-31 11:58:32,136 - DEBUG - 行182: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:16:00', 'direction': 'Short'}
+2025-05-31 11:58:32,136 - DEBUG - 行183: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,137 - DEBUG - 行184: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-31 11:58:32,137 - DEBUG - 行185: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-31 11:58:32,137 - DEBUG - 行186: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,138 - DEBUG - 行187: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,138 - DEBUG - 行188: セクション終了
+2025-05-31 11:58:32,139 - DEBUG - 行191: セクション発見 '最大利益 終日版'
+2025-05-31 11:58:32,139 - DEBUG - 行204: 時刻順セクション開始 '最大利益 終日版'
+2025-05-31 11:58:32,139 - DEBUG - 行205: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '10:49:00', 'exit_time': '11:03:00', 'direction': 'Short'}
+2025-05-31 11:58:32,139 - DEBUG - 行206: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '11:58:00', 'exit_time': '12:04:00', 'direction': 'Short'}
+2025-05-31 11:58:32,139 - DEBUG - 行207: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '14:52:00', 'exit_time': '14:59:00', 'direction': 'Short'}
+2025-05-31 11:58:32,141 - DEBUG - 行208: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '16:06:00', 'exit_time': '16:16:00', 'direction': 'Short'}
+2025-05-31 11:58:32,141 - DEBUG - 行209: データ追加 {'currency_pair': 'EURJPY', 'entry_time': '16:48:00', 'exit_time': '16:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,141 - DEBUG - 行210: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:19:00', 'exit_time': '17:29:00', 'direction': 'Long'}
+2025-05-31 11:58:32,141 - DEBUG - 行211: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:32:00', 'exit_time': '17:46:00', 'direction': 'Short'}
+2025-05-31 11:58:32,142 - DEBUG - 行212: データ追加 {'currency_pair': 'CHFJPY', 'entry_time': '17:52:00', 'exit_time': '17:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,142 - DEBUG - 行213: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '18:51:00', 'exit_time': '18:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,142 - DEBUG - 行214: データ追加 {'currency_pair': 'USDJPY', 'entry_time': '21:43:00', 'exit_time': '21:58:00', 'direction': 'Long'}
+2025-05-31 11:58:32,142 - DEBUG - 行215: セクション終了
+2025-05-31 11:58:32,142 - INFO - ✅ 検証ファイル読み込み完了:
+2025-05-31 11:58:32,143 - INFO -   - 利益効率（Hatch検証）日中版: 10件
+2025-05-31 11:58:32,143 - INFO -   - 利益効率（Hatch検証）: 10件
+2025-05-31 11:58:32,143 - INFO -   - 勝率重視（ぶりんださん検証） 日中版: 10件
+2025-05-31 11:58:32,143 - INFO -   - 勝率重視（ぶりんださん検証）: 10件
+2025-05-31 11:58:32,143 - INFO -   - 時間効率重視 日中版: 10件
+2025-05-31 11:58:32,144 - INFO -   - 時間効率重視 終日版: 10件
+2025-05-31 11:58:32,144 - INFO -   - 最大利益 日中版: 10件
+2025-05-31 11:58:32,144 - INFO -   - 最大利益 終日版: 10件
+2025-05-31 11:58:32,144 - INFO - 📊 検証ファイル総エントリー数: 80件
+2025-05-31 11:58:32,145 - INFO - 📈 Step 2: レート収集
+2025-05-31 11:58:32,145 - INFO - 📈 エントリーポイントレート収集開始
+2025-05-31 11:58:32,146 - INFO - レート取得: USDJPY 08:48:00-08:59:00 Long
+2025-05-31 11:58:32,149 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:32,491 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 11:58:32,494 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:32.494176'}
+2025-05-31 11:58:32,712 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:33,080 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 11:58:33,083 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:33.083981'}
+2025-05-31 11:58:33,085 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:58:33,594 - INFO - レート取得: USDJPY 08:59:00-09:13:00 Short
+2025-05-31 11:58:33,596 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:33,946 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:33,952 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:33.951924'}
+2025-05-31 11:58:34,167 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:34,506 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:34,510 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:34.510886'}
+2025-05-31 11:58:34,511 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:35,022 - INFO - レート取得: EURJPY 09:34:00-09:48:00 Short
+2025-05-31 11:58:35,026 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:35,398 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:58:35,403 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:58:35.403844'}
+2025-05-31 11:58:35,615 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:35,982 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:58:35,984 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:58:35.984249'}
+2025-05-31 11:58:35,985 - INFO -   ✅ EURJPY: エントリー=163.338, エグジット=163.59, Pips差=-25.2
+2025-05-31 11:58:36,498 - INFO - レート取得: USDJPY 11:44:00-11:59:00 Long
+2025-05-31 11:58:36,501 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:36,906 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:36,910 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:36.910174'}
+2025-05-31 11:58:37,120 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:37,472 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:37,474 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:37.474406'}
+2025-05-31 11:58:37,474 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:58:37,986 - INFO - レート取得: USDJPY 14:43:00-14:58:00 Short
+2025-05-31 11:58:37,990 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:38,331 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:38,335 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:38.335461'}
+2025-05-31 11:58:38,548 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:38,887 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:38,888 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:38.888898'}
+2025-05-31 11:58:38,890 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:39,401 - INFO - レート取得: CHFJPY 17:17:00-17:29:00 Long
+2025-05-31 11:58:39,404 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:39,753 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:39,756 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:39.756047'}
+2025-05-31 11:58:39,963 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:40,340 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:40,344 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:40.344431'}
+2025-05-31 11:58:40,345 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:58:40,849 - INFO - レート取得: USDJPY 17:32:00-17:38:00 Short
+2025-05-31 11:58:40,860 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:41,207 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:41,211 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:41.211504'}
+2025-05-31 11:58:41,425 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:41,768 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:41,770 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:41.770312'}
+2025-05-31 11:58:41,771 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:42,282 - INFO - レート取得: CHFJPY 17:47:00-17:58:00 Long
+2025-05-31 11:58:42,284 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:42,630 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:42,634 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:42.634616'}
+2025-05-31 11:58:42,846 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:43,202 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:43,205 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:43.205948'}
+2025-05-31 11:58:43,207 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:58:43,716 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-31 11:58:43,719 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:44,106 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:44,110 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:44.110465'}
+2025-05-31 11:58:44,322 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:44,671 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:44,675 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:44.675178'}
+2025-05-31 11:58:44,675 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:58:45,175 - INFO - 📊 検証データレート収集開始
+2025-05-31 11:58:45,175 - INFO - セクション処理: 利益効率（Hatch検証）日中版 (10件)
+2025-05-31 11:58:45,176 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-31 11:58:45,180 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:45,518 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:45,524 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:45.524144'}
+2025-05-31 11:58:45,738 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:46,083 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:46,088 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:46.088859'}
+2025-05-31 11:58:46,089 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:46,591 - INFO - レート取得: USDJPY 11:43:00-11:54:00 Long
+2025-05-31 11:58:46,594 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:46,924 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:46,928 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:46.928867'}
+2025-05-31 11:58:47,137 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:47,483 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:47,488 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:47.488259'}
+2025-05-31 11:58:47,489 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:58:47,989 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-31 11:58:47,990 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:48,345 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:48,348 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:48.348362'}
+2025-05-31 11:58:48,552 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:48,897 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:48,899 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:48.899435'}
+2025-05-31 11:58:48,899 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:49,407 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-31 11:58:49,410 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:49,794 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:49,798 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:49.798029'}
+2025-05-31 11:58:50,003 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:50,341 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:50,347 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:50.345984'}
+2025-05-31 11:58:50,347 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:50,860 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-31 11:58:50,863 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:51,209 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:51,214 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:51.214427'}
+2025-05-31 11:58:51,420 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:51,789 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:51,791 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:51.791916'}
+2025-05-31 11:58:51,792 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:58:52,299 - INFO - レート取得: EURJPY 16:48:00-16:56:00 Long
+2025-05-31 11:58:52,302 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:52,658 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:58:52,663 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:58:52.663246'}
+2025-05-31 11:58:52,876 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:53,215 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:58:53,220 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:58:53.220252'}
+2025-05-31 11:58:53,221 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:58:53,733 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-31 11:58:53,737 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:54,094 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:54,098 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:54.098647'}
+2025-05-31 11:58:54,313 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:54,653 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:54,655 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:54.655614'}
+2025-05-31 11:58:54,656 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:58:55,165 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-31 11:58:55,168 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:55,507 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:55,511 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:55.511648'}
+2025-05-31 11:58:55,714 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:56,053 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:56,056 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:56.056989'}
+2025-05-31 11:58:56,058 - INFO -   ✅ CHFJPY: エントリー=174.921, エグジット=175.26, Pips差=-33.9
+2025-05-31 11:58:56,567 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-31 11:58:56,569 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:56,911 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:56,914 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:56.914369'}
+2025-05-31 11:58:57,130 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:57,482 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:57,484 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:58:57.484921'}
+2025-05-31 11:58:57,486 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:58:57,995 - INFO - レート取得: USDJPY 18:54:00-18:58:00 Long
+2025-05-31 11:58:57,998 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:58,345 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:58,350 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:58.350713'}
+2025-05-31 11:58:58,559 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:58,907 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:58,913 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:58.913179'}
+2025-05-31 11:58:58,913 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:58:59,414 - INFO - セクション処理: 利益効率（Hatch検証） (10件)
+2025-05-31 11:58:59,414 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-31 11:58:59,418 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:58:59,766 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:58:59,769 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:58:59.769110'}
+2025-05-31 11:58:59,980 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:00,319 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:00,324 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:00.324460'}
+2025-05-31 11:59:00,324 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:00,833 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-31 11:59:00,837 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:01,196 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:01,201 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:01.201128'}
+2025-05-31 11:59:01,413 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:01,740 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:01,744 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:01.744626'}
+2025-05-31 11:59:01,744 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:02,251 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-31 11:59:02,254 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:02,594 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:02,599 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:02.598393'}
+2025-05-31 11:59:02,814 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:03,154 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:03,157 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:03.157257'}
+2025-05-31 11:59:03,158 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:03,671 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-31 11:59:03,673 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:04,041 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:04,043 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:04.043779'}
+2025-05-31 11:59:04,249 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:04,589 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:04,593 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:04.593507'}
+2025-05-31 11:59:04,593 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:05,103 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-31 11:59:05,107 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:05,443 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:05,445 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:05.445338'}
+2025-05-31 11:59:05,651 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:05,993 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:05,996 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:05.996397'}
+2025-05-31 11:59:05,997 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:59:06,503 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-31 11:59:06,505 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:06,843 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:06,846 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:06.846706'}
+2025-05-31 11:59:07,052 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:07,399 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:07,405 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:07.405071'}
+2025-05-31 11:59:07,405 - INFO -   ✅ CHFJPY: エントリー=174.921, エグジット=175.26, Pips差=-33.9
+2025-05-31 11:59:07,911 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-31 11:59:07,915 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:08,271 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:08,275 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:08.275377'}
+2025-05-31 11:59:08,476 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:08,806 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:08,811 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:08.811308'}
+2025-05-31 11:59:08,811 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:59:09,317 - INFO - レート取得: USDJPY 18:54:00-18:58:00 Long
+2025-05-31 11:59:09,320 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:09,680 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:09,684 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:09.684015'}
+2025-05-31 11:59:09,894 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:10,235 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:10,238 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:10.238627'}
+2025-05-31 11:59:10,238 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:59:10,752 - INFO - レート取得: EURUSD 21:08:00-21:11:00 Short
+2025-05-31 11:59:10,754 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:11,084 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:11,088 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:11.088937'}
+2025-05-31 11:59:11,297 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:11,649 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:11,652 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:11.652288'}
+2025-05-31 11:59:11,653 - INFO -   ✅ EURUSD: エントリー=1.13448, エグジット=1.13497, Pips差=-4.9
+2025-05-31 11:59:12,166 - INFO - レート取得: USDJPY 21:42:00-21:57:00 Long
+2025-05-31 11:59:12,170 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:12,512 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:12,517 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:12.516922'}
+2025-05-31 11:59:12,727 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:13,059 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:13,061 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:13.061319'}
+2025-05-31 11:59:13,062 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:59:13,568 - INFO - セクション処理: 勝率重視（ぶりんださん検証） 日中版 (10件)
+2025-05-31 11:59:13,568 - INFO - レート取得: AUDUSD 10:05:00-10:19:00 Long
+2025-05-31 11:59:13,570 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:13,910 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=4&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:13,913 - DEBUG - AUDUSD 価格取得成功: {'bid': 0.64262, 'ask': 0.64384, 'spread': 0, 'timestamp': '2025-05-31T11:59:13.913847'}
+2025-05-31 11:59:14,131 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:14,460 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=4&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:14,464 - DEBUG - AUDUSD 価格取得成功: {'bid': 0.64262, 'ask': 0.64384, 'spread': 0, 'timestamp': '2025-05-31T11:59:14.464646'}
+2025-05-31 11:59:14,464 - INFO -   ✅ AUDUSD: エントリー=0.64384, エグジット=0.64262, Pips差=-12.2
+2025-05-31 11:59:14,971 - INFO - レート取得: USDJPY 10:49:00-10:56:00 Short
+2025-05-31 11:59:14,974 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:15,351 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:15,354 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:15.354256'}
+2025-05-31 11:59:15,558 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:15,889 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:15,891 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:15.891514'}
+2025-05-31 11:59:15,892 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:16,393 - INFO - レート取得: EURUSD 10:59:00-11:10:00 Long
+2025-05-31 11:59:16,395 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:16,734 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:16,736 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:16.736641'}
+2025-05-31 11:59:16,941 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:17,300 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:17,302 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:17.302423'}
+2025-05-31 11:59:17,303 - INFO -   ✅ EURUSD: エントリー=1.13497, エグジット=1.13448, Pips差=-4.9
+2025-05-31 11:59:17,813 - INFO - レート取得: EURJPY 11:58:00-12:04:00 Short
+2025-05-31 11:59:17,818 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:18,180 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:18,183 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:18.183493'}
+2025-05-31 11:59:18,386 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:18,720 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:18,722 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:18.722585'}
+2025-05-31 11:59:18,723 - INFO -   ✅ EURJPY: エントリー=163.338, エグジット=163.59, Pips差=-25.2
+2025-05-31 11:59:19,225 - INFO - レート取得: USDJPY 14:52:00-14:59:00 Short
+2025-05-31 11:59:19,226 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:19,573 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:19,575 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:19.575512'}
+2025-05-31 11:59:19,785 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:20,139 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:20,142 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:20.142794'}
+2025-05-31 11:59:20,144 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:20,654 - INFO - レート取得: EURJPY 15:13:00-15:16:00 Long
+2025-05-31 11:59:20,658 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:20,996 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:21,001 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:21.001377'}
+2025-05-31 11:59:21,205 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:21,580 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:21,582 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:21.582509'}
+2025-05-31 11:59:21,583 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:59:22,089 - INFO - レート取得: USDJPY 16:06:00-16:13:00 Short
+2025-05-31 11:59:22,091 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:22,436 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:22,440 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:22.440009'}
+2025-05-31 11:59:22,653 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:22,977 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:22,980 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:22.980940'}
+2025-05-31 11:59:22,980 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:23,485 - INFO - レート取得: EURJPY 16:48:00-16:56:00 Long
+2025-05-31 11:59:23,488 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:23,859 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:23,863 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:23.863472'}
+2025-05-31 11:59:24,073 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:24,424 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:24,429 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:24.429050'}
+2025-05-31 11:59:24,430 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:59:24,944 - INFO - レート取得: CHFJPY 17:19:00-17:31:00 Long
+2025-05-31 11:59:24,947 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:25,305 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:25,309 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:25.309408'}
+2025-05-31 11:59:25,512 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:25,854 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:25,857 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:25.856631'}
+2025-05-31 11:59:25,857 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:59:26,369 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-31 11:59:26,373 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:26,739 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:26,741 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:26.741849'}
+2025-05-31 11:59:26,945 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:27,294 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:27,298 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:27.298320'}
+2025-05-31 11:59:27,298 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:59:27,810 - INFO - セクション処理: 勝率重視（ぶりんださん検証） (10件)
+2025-05-31 11:59:27,810 - INFO - レート取得: EURUSD 10:59:00-11:10:00 Long
+2025-05-31 11:59:27,813 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:28,588 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:28,591 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:28.591634'}
+2025-05-31 11:59:28,800 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:29,136 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:29,142 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:29.142140'}
+2025-05-31 11:59:29,143 - INFO -   ✅ EURUSD: エントリー=1.13497, エグジット=1.13448, Pips差=-4.9
+2025-05-31 11:59:29,652 - INFO - レート取得: EURJPY 11:58:00-12:04:00 Short
+2025-05-31 11:59:29,657 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:30,007 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:30,010 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:30.010223'}
+2025-05-31 11:59:30,220 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:30,573 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 239
+2025-05-31 11:59:30,576 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:30.576563'}
+2025-05-31 11:59:30,576 - INFO -   ✅ EURJPY: エントリー=163.338, エグジット=163.59, Pips差=-25.2
+2025-05-31 11:59:31,086 - INFO - レート取得: USDJPY 14:52:00-14:59:00 Short
+2025-05-31 11:59:31,090 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:31,443 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:31,447 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:31.447051'}
+2025-05-31 11:59:31,649 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:32,034 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:32,038 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:32.038381'}
+2025-05-31 11:59:32,038 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:32,552 - INFO - レート取得: USDJPY 16:06:00-16:13:00 Short
+2025-05-31 11:59:32,555 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:32,910 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:32,913 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:32.913903'}
+2025-05-31 11:59:33,118 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:33,479 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:33,482 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:33.482093'}
+2025-05-31 11:59:33,483 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:33,985 - INFO - レート取得: EURJPY 16:48:00-16:56:00 Long
+2025-05-31 11:59:33,988 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:34,353 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:34,357 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:34.357662'}
+2025-05-31 11:59:34,566 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:34,926 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:34,929 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:34.929025'}
+2025-05-31 11:59:34,930 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:59:35,438 - INFO - レート取得: CHFJPY 17:19:00-17:31:00 Long
+2025-05-31 11:59:35,440 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:35,804 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 11:59:35,806 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:35.806139'}
+2025-05-31 11:59:36,016 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:36,373 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 11:59:36,375 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:36.375584'}
+2025-05-31 11:59:36,376 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:59:36,886 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-31 11:59:36,888 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:37,231 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:37,234 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:37.234720'}
+2025-05-31 11:59:37,447 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:37,784 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:37,791 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:37.791086'}
+2025-05-31 11:59:37,792 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:59:38,295 - INFO - レート取得: USDJPY 20:08:00-20:19:00 Short
+2025-05-31 11:59:38,298 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:38,649 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:38,652 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:38.652203'}
+2025-05-31 11:59:38,860 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:39,211 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:39,213 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:39.213422'}
+2025-05-31 11:59:39,213 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:39,729 - INFO - レート取得: EURUSD 21:08:00-21:11:00 Short
+2025-05-31 11:59:39,732 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:40,072 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:40,075 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:40.075926'}
+2025-05-31 11:59:40,277 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:40,615 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=21&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 241
+2025-05-31 11:59:40,621 - DEBUG - EURUSD 価格取得成功: {'bid': 1.13448, 'ask': 1.13497, 'spread': 0, 'timestamp': '2025-05-31T11:59:40.621050'}
+2025-05-31 11:59:40,622 - INFO -   ✅ EURUSD: エントリー=1.13448, エグジット=1.13497, Pips差=-4.9
+2025-05-31 11:59:41,132 - INFO - レート取得: USDJPY 21:46:00-21:59:00 Long
+2025-05-31 11:59:41,135 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:41,491 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:41,493 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:41.493872'}
+2025-05-31 11:59:41,712 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:42,066 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:42,068 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:42.068774'}
+2025-05-31 11:59:42,069 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:59:42,582 - INFO - セクション処理: 時間効率重視 日中版 (10件)
+2025-05-31 11:59:42,582 - INFO - レート取得: USDJPY 10:03:00-10:12:00 Short
+2025-05-31 11:59:42,585 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:42,931 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:42,933 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:42.933992'}
+2025-05-31 11:59:43,142 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:43,488 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:43,492 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:43.492006'}
+2025-05-31 11:59:43,492 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:43,998 - INFO - レート取得: USDJPY 11:00:00-11:03:00 Short
+2025-05-31 11:59:44,000 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:44,383 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:44,387 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:44.387112'}
+2025-05-31 11:59:44,595 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:44,931 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:44,936 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:44.936004'}
+2025-05-31 11:59:44,936 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:45,448 - INFO - レート取得: USDJPY 12:01:00-12:04:00 Short
+2025-05-31 11:59:45,450 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:45,807 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:45,811 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:45.811156'}
+2025-05-31 11:59:46,018 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:46,353 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:46,357 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:46.357302'}
+2025-05-31 11:59:46,358 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:46,869 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-31 11:59:46,872 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:47,218 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:47,222 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:47.222495'}
+2025-05-31 11:59:47,433 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:47,792 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:47,797 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:47.797291'}
+2025-05-31 11:59:47,798 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:48,300 - INFO - レート取得: EURJPY 15:13:00-15:16:00 Long
+2025-05-31 11:59:48,303 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:48,791 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:48,796 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:48.796242'}
+2025-05-31 11:59:49,012 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:49,360 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:49,364 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:49.364924'}
+2025-05-31 11:59:49,365 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:59:49,878 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-31 11:59:49,882 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:50,224 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:50,228 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:50.228625'}
+2025-05-31 11:59:50,443 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:50,823 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:50,829 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:50.829070'}
+2025-05-31 11:59:50,829 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:51,343 - INFO - レート取得: EURJPY 16:51:00-16:56:00 Long
+2025-05-31 11:59:51,345 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:51,749 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:51,754 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:51.754392'}
+2025-05-31 11:59:51,967 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:52,297 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:52,300 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:52.300471'}
+2025-05-31 11:59:52,300 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:59:52,803 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-31 11:59:52,805 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:53,136 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 11:59:53,139 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:53.139251'}
+2025-05-31 11:59:53,349 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:53,692 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 11:59:53,697 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T11:59:53.696599'}
+2025-05-31 11:59:53,697 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 11:59:54,202 - INFO - レート取得: EURJPY 17:55:00-17:58:00 Long
+2025-05-31 11:59:54,204 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:54,550 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:54,552 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:54.552908'}
+2025-05-31 11:59:54,766 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:55,099 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 11:59:55,104 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T11:59:55.104974'}
+2025-05-31 11:59:55,104 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 11:59:55,619 - INFO - レート取得: USDJPY 18:53:00-18:56:00 Long
+2025-05-31 11:59:55,621 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:55,966 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:55,968 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:55.968756'}
+2025-05-31 11:59:56,185 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:56,526 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:56,528 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:56.528328'}
+2025-05-31 11:59:56,529 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 11:59:57,041 - INFO - セクション処理: 時間効率重視 終日版 (10件)
+2025-05-31 11:59:57,041 - INFO - レート取得: USDJPY 11:00:00-11:03:00 Short
+2025-05-31 11:59:57,044 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:57,411 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:57,414 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:57.414858'}
+2025-05-31 11:59:57,618 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:58,009 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:58,012 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:58.012672'}
+2025-05-31 11:59:58,012 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:58,521 - INFO - レート取得: USDJPY 12:01:00-12:04:00 Short
+2025-05-31 11:59:58,523 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:58,859 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:58,864 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:58.864402'}
+2025-05-31 11:59:59,078 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 11:59:59,421 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 11:59:59,424 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T11:59:59.424254'}
+2025-05-31 11:59:59,424 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 11:59:59,934 - INFO - レート取得: USDJPY 14:55:00-14:58:00 Short
+2025-05-31 11:59:59,936 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:00,274 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:00,277 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:00.277853'}
+2025-05-31 12:00:00,494 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:00,846 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:00,849 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:00.849283'}
+2025-05-31 12:00:00,849 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:01,363 - INFO - レート取得: EURJPY 15:13:00-15:16:00 Long
+2025-05-31 12:00:01,367 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:01,722 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:01,727 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:01.727609'}
+2025-05-31 12:00:01,943 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:02,307 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:02,309 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:02.309533'}
+2025-05-31 12:00:02,309 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 12:00:02,812 - INFO - レート取得: USDJPY 16:06:00-16:09:00 Short
+2025-05-31 12:00:02,815 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:03,149 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:03,154 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:03.154607'}
+2025-05-31 12:00:03,360 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:03,713 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:03,717 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:03.717443'}
+2025-05-31 12:00:03,717 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:04,229 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-31 12:00:04,232 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:04,573 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:04,575 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:04.575573'}
+2025-05-31 12:00:04,790 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:05,146 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:05,148 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:05.148479'}
+2025-05-31 12:00:05,148 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 12:00:05,660 - INFO - レート取得: EURJPY 17:55:00-17:58:00 Long
+2025-05-31 12:00:05,662 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:05,997 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:06,000 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:06.000519'}
+2025-05-31 12:00:06,207 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:06,549 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:06,552 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:06.552458'}
+2025-05-31 12:00:06,553 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 12:00:07,061 - INFO - レート取得: USDJPY 18:53:00-18:56:00 Long
+2025-05-31 12:00:07,062 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:07,417 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:07,419 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:07.419737'}
+2025-05-31 12:00:07,624 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:08,014 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:08,016 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:08.016828'}
+2025-05-31 12:00:08,016 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 12:00:08,519 - INFO - レート取得: USDJPY 19:02:00-19:06:00 Short
+2025-05-31 12:00:08,523 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:08,893 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:08,898 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:08.898941'}
+2025-05-31 12:00:09,114 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:09,490 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:09,492 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:09.492964'}
+2025-05-31 12:00:09,493 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:09,995 - INFO - レート取得: USDJPY 21:43:00-21:56:00 Long
+2025-05-31 12:00:09,997 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:10,339 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:10,345 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:10.345170'}
+2025-05-31 12:00:10,557 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:10,900 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:10,903 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:10.903405'}
+2025-05-31 12:00:10,904 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 12:00:11,408 - INFO - セクション処理: 最大利益 日中版 (10件)
+2025-05-31 12:00:11,408 - INFO - レート取得: EURJPY 10:00:00-10:13:00 Short
+2025-05-31 12:00:11,413 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:11,751 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:11,755 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:11.755295'}
+2025-05-31 12:00:11,970 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:12,306 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:12,321 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:12.321810'}
+2025-05-31 12:00:12,322 - INFO -   ✅ EURJPY: エントリー=163.338, エグジット=163.59, Pips差=-25.2
+2025-05-31 12:00:12,834 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-31 12:00:12,836 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:13,187 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:13,190 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:13.189295'}
+2025-05-31 12:00:13,393 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:13,727 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:13,732 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:13.732791'}
+2025-05-31 12:00:13,732 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:14,234 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-31 12:00:14,236 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:14,593 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:14,595 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:14.595886'}
+2025-05-31 12:00:14,807 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:15,173 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:15,175 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:15.175489'}
+2025-05-31 12:00:15,176 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:15,677 - INFO - レート取得: USDJPY 14:52:00-14:59:00 Short
+2025-05-31 12:00:15,680 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:16,010 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:16,014 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:16.014229'}
+2025-05-31 12:00:16,221 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:16,549 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:16,552 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:16.552654'}
+2025-05-31 12:00:16,552 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:17,068 - INFO - レート取得: USDJPY 16:06:00-16:16:00 Short
+2025-05-31 12:00:17,070 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:17,420 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:17,424 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:17.424809'}
+2025-05-31 12:00:17,635 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:18,034 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:18,036 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:18.036168'}
+2025-05-31 12:00:18,037 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:18,551 - INFO - レート取得: EURJPY 16:48:00-16:58:00 Long
+2025-05-31 12:00:18,555 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:18,917 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:18,920 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:18.920698'}
+2025-05-31 12:00:19,130 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:19,487 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:19,491 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:19.491460'}
+2025-05-31 12:00:19,491 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 12:00:19,997 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-31 12:00:20,000 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:20,345 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:20,349 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:20.349668'}
+2025-05-31 12:00:20,563 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:20,913 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:20,916 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:20.916023'}
+2025-05-31 12:00:20,917 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 12:00:21,418 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-31 12:00:21,419 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:21,783 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:21,785 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:21.785511'}
+2025-05-31 12:00:21,997 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:22,350 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:22,353 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:22.353249'}
+2025-05-31 12:00:22,353 - INFO -   ✅ CHFJPY: エントリー=174.921, エグジット=175.26, Pips差=-33.9
+2025-05-31 12:00:22,867 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-31 12:00:22,871 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:23,236 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:23,242 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:23.241180'}
+2025-05-31 12:00:23,444 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:23,850 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:23,856 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:23.855331'}
+2025-05-31 12:00:23,856 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 12:00:24,360 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-31 12:00:24,364 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:24,735 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:24,738 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:24.738457'}
+2025-05-31 12:00:24,955 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:25,297 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:25,299 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:25.299809'}
+2025-05-31 12:00:25,300 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 12:00:25,804 - INFO - セクション処理: 最大利益 終日版 (10件)
+2025-05-31 12:00:25,804 - INFO - レート取得: USDJPY 10:49:00-11:03:00 Short
+2025-05-31 12:00:25,808 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:26,179 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:26,183 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:26.183533'}
+2025-05-31 12:00:26,401 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:26,736 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:26,740 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:26.740535'}
+2025-05-31 12:00:26,741 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:27,253 - INFO - レート取得: USDJPY 11:58:00-12:04:00 Short
+2025-05-31 12:00:27,255 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:27,600 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:27,605 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:27.605581'}
+2025-05-31 12:00:27,814 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:28,159 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:28,163 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:28.163760'}
+2025-05-31 12:00:28,164 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:28,679 - INFO - レート取得: USDJPY 14:52:00-14:59:00 Short
+2025-05-31 12:00:28,682 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:29,058 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:29,062 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:29.062533'}
+2025-05-31 12:00:29,277 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:29,627 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:29,632 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:29.632228'}
+2025-05-31 12:00:29,632 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:30,144 - INFO - レート取得: USDJPY 16:06:00-16:16:00 Short
+2025-05-31 12:00:30,147 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:30,498 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:30,501 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:30.501485'}
+2025-05-31 12:00:30,710 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:31,094 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:31,097 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:31.097544'}
+2025-05-31 12:00:31,097 - INFO -   ✅ USDJPY: エントリー=143.968, エグジット=144.132, Pips差=-16.4
+2025-05-31 12:00:31,598 - INFO - レート取得: EURJPY 16:48:00-16:58:00 Long
+2025-05-31 12:00:31,601 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:31,948 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:31,951 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:31.951684'}
+2025-05-31 12:00:32,169 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:32,539 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=18&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 240
+2025-05-31 12:00:32,558 - DEBUG - EURJPY 価格取得成功: {'bid': 163.338, 'ask': 163.59, 'spread': 0, 'timestamp': '2025-05-31T12:00:32.558604'}
+2025-05-31 12:00:32,565 - INFO -   ✅ EURJPY: エントリー=163.59, エグジット=163.338, Pips差=-25.2
+2025-05-31 12:00:33,080 - INFO - レート取得: CHFJPY 17:19:00-17:29:00 Long
+2025-05-31 12:00:33,084 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:33,436 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:33,440 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:33.439013'}
+2025-05-31 12:00:33,642 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:34,020 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 12:00:34,023 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:34.023577'}
+2025-05-31 12:00:34,023 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 12:00:34,537 - INFO - レート取得: CHFJPY 17:32:00-17:46:00 Short
+2025-05-31 12:00:34,540 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:34,900 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 12:00:34,904 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:34.904387'}
+2025-05-31 12:00:35,115 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:35,477 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 12:00:35,479 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:35.479995'}
+2025-05-31 12:00:35,481 - INFO -   ✅ CHFJPY: エントリー=174.921, エグジット=175.26, Pips差=-33.9
+2025-05-31 12:00:35,995 - INFO - レート取得: CHFJPY 17:52:00-17:58:00 Long
+2025-05-31 12:00:35,997 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:36,417 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 12:00:36,420 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:36.420433'}
+2025-05-31 12:00:36,639 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:37,025 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=8&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 244
+2025-05-31 12:00:37,028 - DEBUG - CHFJPY 価格取得成功: {'bid': 174.921, 'ask': 175.26, 'spread': 0, 'timestamp': '2025-05-31T12:00:37.028268'}
+2025-05-31 12:00:37,029 - INFO -   ✅ CHFJPY: エントリー=175.26, エグジット=174.921, Pips差=-33.9
+2025-05-31 12:00:37,539 - INFO - レート取得: USDJPY 18:51:00-18:58:00 Long
+2025-05-31 12:00:37,543 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:37,915 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:37,917 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:37.917270'}
+2025-05-31 12:00:38,134 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:38,487 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:38,489 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:38.489868'}
+2025-05-31 12:00:38,490 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 12:00:39,005 - INFO - レート取得: USDJPY 21:43:00-21:58:00 Long
+2025-05-31 12:00:39,008 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:39,395 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:39,400 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:39.400656'}
+2025-05-31 12:00:39,613 - DEBUG - Starting new HTTPS connection (1): gateway.saxobank.com:443
+2025-05-31 12:00:39,986 - DEBUG - https://gateway.saxobank.com:443 "GET /sim/openapi/trade/v1/infoprices?Uic=42&AssetType=FxSpot&FieldGroups=Quote HTTP/1.1" 200 243
+2025-05-31 12:00:39,993 - DEBUG - USDJPY 価格取得成功: {'bid': 143.968, 'ask': 144.132, 'spread': 0, 'timestamp': '2025-05-31T12:00:39.993002'}
+2025-05-31 12:00:39,993 - INFO -   ✅ USDJPY: エントリー=144.132, エグジット=143.968, Pips差=-16.4
+2025-05-31 12:00:40,502 - INFO - 📋 Step 3: スプレッドシートデータ準備
+2025-05-31 12:00:40,503 - INFO - 📋 スプレッドシートデータ準備完了: 89行（時刻順ソート済み）
+2025-05-31 12:00:40,503 - INFO - 📤 Step 4: スプレッドシート送信
+2025-05-31 12:00:40,503 - INFO - 📤 スプレッドシートにデータ送信中...
+2025-05-31 12:00:40,509 - DEBUG - Starting new HTTPS connection (1): script.google.com:443
+2025-05-31 12:00:41,211 - DEBUG - https://script.google.com:443 "POST /macros/s/AKfycbxwox807RBi4yJG2rHSklR5wiW5uA2Z38rxaJVs-WPJ/exec HTTP/1.1" 401 None
+2025-05-31 12:00:41,220 - ERROR - ❌ スプレッドシート送信失敗: 401
+2025-05-31 12:00:41,220 - ERROR - レスポンス: <!DOCTYPE html><html lang="ja"><head><meta name="description" content="ウェブ ワープロ、プレゼンテーション、スプレッドシート"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"><link rel="shortcut icon" href="//docs.google.com/favicon.ico"><title>ページが見つかりません</title><meta name="referrer" content="origin"><link href="//fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet" type="text/css" nonce="iVXbqUao3HMEBphLkATZcg"><style nonce="iVXbqUao3HMEBphLkATZcg">.goog-inline-block{position:relative;display:-moz-inline-box;display:inline-block}* html .goog-inline-block{display:inline}*:first-child+html .goog-inline-block{display:inline}#drive-logo{margin:18px 0;position:absolute;white-space:nowrap}.docs-drivelogo-img{background-image:url(//ssl.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png);-webkit-background-size:116px 41px;background-size:116px 41px;display:inline-block;height:41px;vertical-align:bottom;width:116px}.docs-drivelogo-text{color:#000;display:inline-block;opacity:.54;text-decoration:none;font-family:"Product Sans",Arial,Helvetica,sans-serif;font-size:32px;text-rendering:optimizeLegibility;position:relative;top:-6px;left:-7px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi){.docs-drivelogo-img{background-image:url(//ssl.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_116x41dp.png)}}sentinel{}</style><style type="text/css" nonce="iVXbqUao3HMEBphLkATZcg">body {background-color: #fff; font-family: Arial,sans-serif; font-size: 13px; margin: 0; padding: 0;}a, a:link, a:visited {color: #112ABB;}</style><style type="text/css" nonce="iVXbqUao3HMEBphLkATZcg">.errorMessage {font-size: 12pt; font-weight: bold; line-height: 150%;}</style></head><body><div id="outerContainer"><div id="innerContainer"><div style="position: absolute; top: -80px;"><div id="drive-logo"><a href="/"><span class="docs-drivelogo-img" title="Google ロゴ"></span><span class="docs-drivelogo-text">&nbsp;ドライブ</span></a></div></div><div align="center"><p class="errorMessage" style="padding-top: 50px">現在、ファイルを開くことができません。</p><p>アドレスを確認して、もう一度試してください。</p><div style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; padding: 10px 125px; width: 300px;"><p><strong>あれもこれも Google ドライブで</strong></p><p> Google ドライブにはドキュメントやスプレッドシート、プレゼンテーションなどを簡単に作成、保存してオンラインで共有できるアプリが揃っています。</p><p>詳細は<a href="https://drive.google.com/start/apps">drive.google.com/start/apps</a>をご覧ください。</p></div></div></div></div></body><style nonce="iVXbqUao3HMEBphLkATZcg">html {height: 100%; overflow: auto;}body {height: 100%; overflow: auto;}#outerContainer {margin: auto; max-width: 750px;}#innerContainer {margin-bottom: 20px; margin-left: 40px; margin-right: 40px; margin-top: 80px; position: relative;}</style></html>
+2025-05-31 12:00:41,233 - INFO - 📁 バックアップファイル保存完了:
+2025-05-31 12:00:41,233 - INFO -   - JSON: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\backup\fx_rates_backup_20250531_120041.json
+2025-05-31 12:00:41,235 - INFO -   - CSV: c:\Users\beru\Dropbox\006_TRADE\historycal\saxobank\backup\fx_rates_backup_20250531_120041.csv
+2025-05-31 12:00:41,235 - INFO - ================================================================================
+2025-05-31 12:00:41,236 - INFO - 🎉 FXレート収集完了
+2025-05-31 12:00:41,236 - INFO - 📊 収集データ統計:
+2025-05-31 12:00:41,236 - INFO -   - 総エントリーポイント数: 89
+2025-05-31 12:00:41,237 - INFO -   - 対象通貨ペア: 5
+2025-05-31 12:00:41,237 - INFO -   - データソース数: 9
+2025-05-31 12:00:41,237 - INFO - 📊 セクション別統計:
+2025-05-31 12:00:41,237 - INFO -   - entrypoints: 9件
+2025-05-31 12:00:41,238 - INFO -   - 最大利益 日中版: 10件
+2025-05-31 12:00:41,238 - INFO -   - 時間効率重視 日中版: 10件
+2025-05-31 12:00:41,238 - INFO -   - 勝率重視（ぶりんださん検証） 日中版: 10件
+2025-05-31 12:00:41,238 - INFO -   - 利益効率（Hatch検証）日中版: 10件
+2025-05-31 12:00:41,238 - INFO -   - 利益効率（Hatch検証）: 10件
+2025-05-31 12:00:41,238 - INFO -   - 最大利益 終日版: 10件
+2025-05-31 12:00:41,239 - INFO -   - 勝率重視（ぶりんださん検証）: 10件
+2025-05-31 12:00:41,239 - INFO -   - 時間効率重視 終日版: 10件
+2025-05-31 12:00:41,239 - INFO - ================================================================================
+2025-05-31 12:00:46,245 - INFO - 🛑 自動トークン更新停止
