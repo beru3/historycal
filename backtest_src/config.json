@@ -1,0 +1,54 @@
+{
+  "backtest_settings": {
+    "risk_management": {
+      "stop_loss_pips": 15,
+      "take_profit_pips": 30,
+      "enable_stop_loss": true,
+      "enable_take_profit": false,
+      "slippage_pips": 1
+    },
+    "advanced_settings": {
+      "weekend_sl_disabled": true,
+      "major_news_sl_disabled": false,
+      "volatile_hours_sl_multiplier": 1.5
+    }
+  },
+  "currency_settings": {
+    "USDJPY": {
+      "pip_value": 0.01,
+      "pip_multiplier": 100,
+      "stop_loss_pips": 15,
+      "take_profit_pips": 30
+    },
+    "EURJPY": {
+      "pip_value": 0.01,
+      "pip_multiplier": 100,
+      "stop_loss_pips": 12,
+      "take_profit_pips": 25
+    },
+    "GBPJPY": {
+      "pip_value": 0.01,
+      "pip_multiplier": 100,
+      "stop_loss_pips": 20,
+      "take_profit_pips": 40
+    },
+    "EURUSD": {
+      "pip_value": 0.0001,
+      "pip_multiplier": 10000,
+      "stop_loss_pips": 10,
+      "take_profit_pips": 20
+    },
+    "GBPUSD": {
+      "pip_value": 0.0001,
+      "pip_multiplier": 10000,
+      "stop_loss_pips": 12,
+      "take_profit_pips": 24
+    }
+  },
+  "system_settings": {
+    "log_level": "INFO",
+    "save_detailed_logs": true,
+    "generate_charts": true,
+    "chart_dpi": 300
+  }
+}

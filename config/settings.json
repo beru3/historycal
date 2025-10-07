@@ -1,0 +1,24 @@
+{
+    "currency_pairs": {
+        "AUDJPY": false,
+        "AUDUSD": false,
+        "CADJPY": false,
+        "CHFJPY": false,
+        "EURGBP": false,
+        "EURAUD": false,
+        "EURJPY": true,
+        "EURUSD": false,
+        "GBPAUD": false,
+        "GBPJPY": false,
+        "GBPUSD": false,
+        "NZDJPY": false,
+        "NZDUSD": false,
+        "USDCHF": false,
+        "USDJPY": true
+    },
+    "weights": {
+        "win_rate": 0.4,
+        "pips": 0.3,
+        "risk_efficiency": 0.3
+    }
+}

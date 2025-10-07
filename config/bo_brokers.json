@@ -1,0 +1,32 @@
+{
+  "外為オプション": {
+    "expiries": ["01:00", "03:00", "05:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
+    "trade_duration_hours": 2,
+    "close_minute_before": 2,
+    "summer_time_shift_hours": 0
+  },
+  "みんなのオプション": {
+    "expiries": ["00:10", "02:10", "04:10", "06:10", "10:10", "12:10", "14:10", "16:10", "18:10", "20:10", "22:10"],
+    "trade_duration_hours": 2,
+    "close_minute_before": 2,
+    "summer_time_shift_hours": 0
+  },
+  "外貨ネクストバイナリー": {
+    "expiries": ["00:20", "02:20", "04:20", "10:20", "12:20", "14:20", "16:20", "18:20", "20:20", "22:20"],
+    "trade_duration_hours": 2,
+    "close_minute_before": 2,
+    "summer_time_shift_hours": 0
+  },
+  "オプトレ！": {
+    "expiries": ["01:25", "03:25", "05:25", "09:25", "11:25", "13:25", "15:25", "17:25", "19:25", "21:25", "23:25"],
+    "trade_duration_hours": 2,
+    "close_minute_before": 1,
+    "summer_time_shift_hours": 0
+  },
+  "IG証券": {
+    "expiries": ["01:00", "03:00", "05:00", "07:00", "09:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
+    "trade_duration_hours": 2,
+    "close_minute_before": 2,
+    "summer_time_shift_hours": 0
+  }
+}

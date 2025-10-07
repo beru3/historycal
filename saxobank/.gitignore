@@ -1,0 +1,194 @@
+# .gitignore - サクソバンクAPI OAuth認証システム用
+
+# ===================================
+# 認証・セキュリティ関連ファイル
+# ===================================
+
+# OAuth認証トークン（重要：必ず除外）
+saxo_tokens.json
+*.token
+oauth_tokens.json
+
+# 設定ファイル（認証情報含む場合は除外を推奨）
+# config.py  # コメントアウト推奨：認証情報が含まれる場合
+
+# API キー・シークレット
+api_keys.json
+secrets.json
+credentials.json
+
+# ===================================
+# ログファイル
+# ===================================
+
+# ログディレクトリとファイル
+log/
+logs/
+*.log
+
+# FX取引ログ
+fx_trades_*.log
+fx_auto_entry_*.log
+oauth_test_*.log
+
+# ===================================
+# バックアップ・一時ファイル
+# ===================================
+
+# バックアップディレクトリ
+backup/
+backups/
+
+# 一時ファイル
+temp/
+tmp/
+*.tmp
+*.temp
+
+# CSVバックアップ
+*_backup_*.csv
+*_backup_*.json
+
+# ===================================
+# Python関連
+# ===================================
+
+# バイトコードファイル
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 配布・ビルド関連
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# ===================================
+# 開発環境・IDE関連
+# ===================================
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ===================================
+# OS関連
+# ===================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# プロジェクト固有
+# ===================================
+
+# FXデータファイル（機密情報の場合）
+# entrypoints_*.csv  # 必要に応じてコメントアウト解除
+# verification_*.csv
+
+# テスト結果
+test_results/
+test_output/
+
+# 実行時生成ファイル
+runtime_data/
+session_data/
+
+# ===================================
+# 設定例
+# ===================================
+
+# 開発用設定ファイル
+config_dev.py
+config_test.py
+config_local.py
+
+# データベースファイル
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# 注意事項
+# ===================================
+
+# 以下のファイルは特に注意して除外してください：
+# 1. saxo_tokens.json - OAuth認証トークン
+# 2. config.py - CLIENT_SECRET等の認証情報
+# 3. *.log - 取引履歴やAPIレスポンス
+# 4. backup/ - 機密データのバックアップ
+
+# Git で管理したいが機密情報を含むファイルは、
+# テンプレート版を作成し、実際の値は環境変数や
+# 別途管理することを推奨します。

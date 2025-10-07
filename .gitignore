@@ -1,0 +1,38 @@
+# データファイル
+input/
+output/
+*.pkl
+*.csv
+*.xlsx
+*.zip
+
+# バックアップ・古いファイル
+_old/
+_bk*/
+backup/
+*_backup_*/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ログファイル
+*.log
+logs/
+
+# 実行結果
+backtest_results/
+entrypoint_*/
+FXポイント突合/
+
+# トークン・認証情報
+*token*.json
+saxo_tokens.json
+
+# その他
+.DS_Store
+*.tmp
+.claude/

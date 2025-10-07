@@ -1,0 +1,9 @@
+{
+    "currency_pairs": {
+        "USDJPY": true,
+        "EURJPY": true,
+        "GBPJPY": true,
+        "AUDJPY": true,
+        "EURUSD": true
+    }
+}
